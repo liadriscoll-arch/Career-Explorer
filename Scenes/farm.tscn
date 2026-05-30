@@ -83,7 +83,7 @@ size = Vector2(16.764704, 15.000004)
 [node name="farm_house" type="AnimatedSprite2D" unique_id=1861983936]
 scale = Vector2(1.7, 1.7)
 sprite_frames = SubResource("SpriteFrames_oglod")
-frame_progress = 0.028597178
+frame_progress = 0.106674716
 script = ExtResource("14_vhjd4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2020983212]

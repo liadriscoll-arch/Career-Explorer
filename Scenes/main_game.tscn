@@ -189,7 +189,7 @@ sources/0 = SubResource("TileSetAtlasSource_6j5ir")
 script = ExtResource("1_pu3va")
 
 [node name="Farm" parent="." unique_id=1861983936 instance=ExtResource("2_6j5ir")]
-position = Vector2(248, -22)
+position = Vector2(246.99998, -22.000015)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=185109715]
 tile_set = SubResource("TileSet_mgc0q")
