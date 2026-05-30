@@ -242,4 +242,6 @@ position = Vector2(105, -97)
 zoom = Vector2(2, 2)
 
 [connection signal="changed" from="brightness_slider" to="." method="_on_brightness_slider_changed"]
+[connection signal="value_changed" from="brightness_slider" to="." method="_on_brightness_slider_value_changed"]
 [connection signal="changed" from="volume_slider" to="." method="_on_volume_slider_changed"]
+[connection signal="value_changed" from="volume_slider" to="." method="_on_volume_slider_value_changed"]
