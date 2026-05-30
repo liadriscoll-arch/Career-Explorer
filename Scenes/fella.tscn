@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://blue7tffji4dv"]
+
+[ext_resource type="Script" uid="uid://c5miswfqa3jpx" path="res://Scripts/fella.gd" id="1_bawvk"]
+[ext_resource type="Texture2D" uid="uid://dcpdpjlovo2tb" path="res://Assets/Sprites/Fella Sprites/GodotFella.png" id="2_bawvk"]
+[ext_resource type="Texture2D" uid="uid://updxdme4uikp" path="res://Assets/Sprites/Fella Sprites/Godot Fella Idle 2.png" id="3_w7p10"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i0017"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_bawvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w7p10")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bawvk"]
+radius = 4.0
+height = 18.0
+
+[node name="Fella" type="CharacterBody2D" unique_id=228294491]
+script = ExtResource("1_bawvk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1793823170]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_i0017")
+autoplay = "default"
+frame_progress = 0.63808674
+offset = Vector2(-0.5, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=204486722]
+position = Vector2(0, -9)
+shape = SubResource("CapsuleShape2D_bawvk")
