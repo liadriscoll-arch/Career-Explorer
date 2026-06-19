@@ -29,14 +29,22 @@
 [ext_resource type="Script" uid="uid://bh3opcr31y0pt" path="res://Scenes/sprite_2d_3.gd" id="19_psixv"]
 [ext_resource type="Texture2D" uid="uid://cxew6iiogcuih" path="res://Scenes/coffee_pot_level_3.png" id="19_xvj3c"]
 [ext_resource type="Texture2D" uid="uid://d3vqriv8dx5nd" path="res://Scenes/coffee_pot_full.png" id="20_4y880"]
-[ext_resource type="Script" uid="uid://ca5ctgyg22pfx" path="res://Scenes/decaf_espresso_pot.gd" id="21_mjcik"]
 [ext_resource type="Script" uid="uid://dscxit2kdpf8b" path="res://Scenes/regular_coffee_pot.gd" id="22_ftlsx"]
 [ext_resource type="Texture2D" uid="uid://kmsgeoh8cfok" path="res://Assets/Coffee assets/coffee_milk.webp" id="23_il2mf"]
 [ext_resource type="Script" uid="uid://cqxy3vam1881o" path="res://Scenes/decaf_coffee_pot.gd" id="23_vqmpm"]
+[ext_resource type="Texture2D" uid="uid://brmhg8x2umc7r" path="res://Assets/Coffee assets/coffee_pot_label.png" id="24_pg55l"]
+[ext_resource type="Script" uid="uid://bdb5b7t6ao57r" path="res://Scenes/coffee_label_2.gd" id="25_4y880"]
 [ext_resource type="Script" uid="uid://bw5b6vi2mmqrv" path="res://Scenes/sprite_2d_9.gd" id="25_kvvs4"]
 [ext_resource type="Script" uid="uid://c4gq844k1dlxo" path="res://Scenes/workstation_button.gd" id="26_kq2uj"]
+[ext_resource type="Script" uid="uid://dykcwhuvy1g6v" path="res://Scenes/pot_label.gd" id="26_mjcik"]
 [ext_resource type="Script" uid="uid://bik3hal2nr5m1" path="res://Scenes/milk_3.gd" id="34_qi74c"]
 [ext_resource type="Script" uid="uid://dt4gbjf8cty2a" path="res://Scenes/milk_2.gd" id="35_qi74c"]
+[ext_resource type="Texture2D" uid="uid://bncwo3yhy6a2p" path="res://Assets/Coffee assets/coffee_speech_bubble.webp" id="37_pg55l"]
+[ext_resource type="Script" uid="uid://ceguvspg6l6su" path="res://Scenes/speech_bubble.gd" id="38_xvj3c"]
+[ext_resource type="Texture2D" uid="uid://c2gxpsuxdgc6r" path="res://Assets/Coffee assets/customers/male_coffee_1.png" id="41_dkik3"]
+[ext_resource type="Texture2D" uid="uid://csd0e3pawdjck" path="res://Assets/Coffee assets/stacked_latte.png" id="42_vqmpm"]
+[ext_resource type="Script" uid="uid://xnb8ei0sfox7" path="res://Scenes/sprite_2d_13.gd" id="43_dkik3"]
+[ext_resource type="Texture2D" uid="uid://cgph0pr1tras4" path="res://Assets/Coffee assets/stacked_coffee.webp" id="44_cbc88"]
 
 [node name="coffee_game_day" type="Node2D" unique_id=567127333]
 script = ExtResource("1_uky3h")
@@ -46,10 +54,6 @@ script = ExtResource("1_uky3h")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1899262145]
 scale = Vector2(10, 10)
 texture = ExtResource("2_3ufmp")
-
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=559601762]
-scale = Vector2(10, 10)
-texture = ExtResource("12_lwcsy")
 
 [node name="menu_label" type="Label" parent="." unique_id=1618102639]
 offset_left = 588.0
@@ -165,7 +169,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="espresso_machine" parent="." unique_id=1673637665 instance=ExtResource("13_8b7x2")]
-position = Vector2(69, -473)
+position = Vector2(57, -347)
 scale = Vector2(2, 2)
 script = ExtResource("14_qi74c")
 
@@ -178,17 +182,6 @@ position = Vector2(139, -323)
 scale = Vector2(2, 2)
 texture = ExtResource("15_douqg")
 script = ExtResource("16_qi74c")
-empty_texture = ExtResource("15_douqg")
-level_1_texture = ExtResource("17_xr1er")
-level_2_texture = ExtResource("18_pg55l")
-level_3_texture = ExtResource("19_xvj3c")
-level_4_texture = ExtResource("20_4y880")
-
-[node name="decaf_espresso_pot" type="Sprite2D" parent="." unique_id=1939566005]
-position = Vector2(70, -323)
-scale = Vector2(2, 2)
-texture = ExtResource("15_douqg")
-script = ExtResource("21_mjcik")
 empty_texture = ExtResource("15_douqg")
 level_1_texture = ExtResource("17_xr1er")
 level_2_texture = ExtResource("18_pg55l")
@@ -216,6 +209,56 @@ level_1_texture = ExtResource("17_xr1er")
 level_2_texture = ExtResource("18_pg55l")
 level_3_texture = ExtResource("19_xvj3c")
 level_4_texture = ExtResource("20_4y880")
+
+[node name="coffee_label3" type="Sprite2D" parent="." unique_id=1481345502]
+position = Vector2(334, -321)
+scale = Vector2(3, 3)
+texture = ExtResource("24_pg55l")
+
+[node name="coffee_label2" type="Sprite2D" parent="." unique_id=578858959]
+position = Vector2(135, -321)
+scale = Vector2(3, 3)
+texture = ExtResource("24_pg55l")
+script = ExtResource("25_4y880")
+
+[node name="coffee_label" type="Sprite2D" parent="." unique_id=1150429462]
+position = Vector2(261, -321)
+scale = Vector2(3, 3)
+texture = ExtResource("24_pg55l")
+
+[node name="pot_label3" type="Label" parent="." unique_id=913126311]
+offset_left = 319.0
+offset_top = -329.0
+offset_right = 359.0
+offset_bottom = -312.0
+theme_override_fonts/font = ExtResource("4_t8amc")
+theme_override_font_sizes/font_size = 5
+text = "decaf"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="pot_label2" type="Label" parent="." unique_id=1223181063]
+offset_left = 247.0
+offset_top = -333.0
+offset_right = 287.0
+offset_bottom = -310.0
+theme_override_fonts/font = ExtResource("4_t8amc")
+theme_override_font_sizes/font_size = 5
+text = "regular"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="pot_label" type="Label" parent="." unique_id=308934897]
+offset_left = 121.0
+offset_top = -334.0
+offset_right = 161.0
+offset_bottom = -311.0
+theme_override_fonts/font = ExtResource("4_t8amc")
+theme_override_font_sizes/font_size = 5
+text = "espresso"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("26_mjcik")
 
 [node name="Sprite2D7" type="Sprite2D" parent="." unique_id=1035688805]
 position = Vector2(393, -452)
@@ -265,5 +308,71 @@ script = ExtResource("25_kvvs4")
 [node name="fella_coffee_shop" parent="." unique_id=1743656796 instance=ExtResource("3_n7ow1")]
 position = Vector2(0, -370)
 
+[node name="speech_bubble" type="Sprite2D" parent="." unique_id=1777605951]
+position = Vector2(-143, -375)
+scale = Vector2(5, 5)
+texture = ExtResource("37_pg55l")
+script = ExtResource("38_xvj3c")
+
+[node name="speech_button" type="TextureButton" parent="." unique_id=1254625874]
+offset_left = -228.0
+offset_top = -487.0
+offset_right = -58.0
+offset_bottom = -265.0
+
+[node name="Customer1" type="Sprite2D" parent="." unique_id=230583814]
+position = Vector2(-5, -100)
+scale = Vector2(7.5, 7.5)
+texture = ExtResource("41_dkik3")
+
+[node name="Customer2" type="Sprite2D" parent="." unique_id=813416250]
+position = Vector2(-94, 4.000004)
+scale = Vector2(7.5, 7.5)
+texture = ExtResource("41_dkik3")
+
+[node name="Customer3" type="Sprite2D" parent="." unique_id=826985898]
+position = Vector2(-269, 48.000015)
+scale = Vector2(7.5, 7.5)
+texture = ExtResource("41_dkik3")
+
+[node name="Customer_timer" type="Timer" parent="." unique_id=627600059]
+wait_time = 5.0
+autostart = true
+
+[node name="type_sprite" type="Sprite2D" parent="." unique_id=106380902]
+position = Vector2(-107, -380)
+
+[node name="drink_sprite" type="Sprite2D" parent="." unique_id=374701001]
+position = Vector2(-171, -377)
+scale = Vector2(0.11328125, 0.111328125)
+
+[node name="intro_label" type="Label" parent="." unique_id=2048180098]
+offset_left = -940.0
+offset_top = -507.0
+offset_right = -243.0
+offset_bottom = -484.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_t8amc")
+horizontal_alignment = 1
+
+[node name="Sprite2D12" type="Sprite2D" parent="." unique_id=758939280]
+
+[node name="Sprite2D13" type="Sprite2D" parent="." unique_id=1827360397]
+position = Vector2(29, -452)
+texture = ExtResource("42_vqmpm")
+script = ExtResource("43_dkik3")
+
+[node name="Sprite2D14" type="Sprite2D" parent="." unique_id=1963262062]
+position = Vector2(86, -452)
+texture = ExtResource("44_cbc88")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=559601762]
+scale = Vector2(10, 10)
+texture = ExtResource("12_lwcsy")
+
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
 [connection signal="pressed" from="workstation_button" to="workstation_button" method="_on_pressed"]
+[connection signal="pressed" from="speech_button" to="." method="_on_speech_button_pressed"]
+[connection signal="pressed" from="speech_button" to="speech_button" method="_on_pressed"]
+[connection signal="timeout" from="Customer_timer" to="." method="_on_customer_timer_timeout"]
+[connection signal="timeout" from="Customer_timer" to="Customer_timer" method="_on_timeout"]

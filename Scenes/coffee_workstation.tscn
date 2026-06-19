@@ -23,7 +23,6 @@
 [ext_resource type="Texture2D" uid="uid://l1osmjfcxhmp" path="res://Assets/Coffee assets/coffee_pot_level_2.png" id="19_6ofcb"]
 [ext_resource type="Texture2D" uid="uid://cxew6iiogcuih" path="res://Scenes/coffee_pot_level_3.png" id="20_liats"]
 [ext_resource type="Texture2D" uid="uid://d3vqriv8dx5nd" path="res://Scenes/coffee_pot_full.png" id="21_v8adl"]
-[ext_resource type="Script" uid="uid://ca5ctgyg22pfx" path="res://Scenes/decaf_espresso_pot.gd" id="22_2ornp"]
 [ext_resource type="Script" uid="uid://cqxy3vam1881o" path="res://Scenes/decaf_coffee_pot.gd" id="24_4q1ej"]
 [ext_resource type="Script" uid="uid://0ftsx2hhykwj" path="res://Scenes/coffee_machine_start.gd" id="26_g3dln"]
 [ext_resource type="Script" uid="uid://8ymbff4gi37s" path="res://Scenes/decaf_beans_2.gd" id="26_gocpr"]
@@ -34,6 +33,16 @@
 [ext_resource type="Script" uid="uid://bqb6kw50g8ny4" path="res://Scenes/espresso_machine_start.gd" id="31_u0tsq"]
 [ext_resource type="Script" uid="uid://bfbclxy2duilj" path="res://Scenes/decaf_beans_3.gd" id="33_k7rbi"]
 [ext_resource type="FontFile" uid="uid://dl176n4kxwrv8" path="res://Assets/04b_30/04B_30__.TTF" id="34_18fnt"]
+[ext_resource type="Texture2D" uid="uid://dye22cfhsbsru" path="res://Assets/Coffee assets/coffee_button_hover.webp" id="35_41dfl"]
+[ext_resource type="Texture2D" uid="uid://btl53kqnxqrep" path="res://Assets/Coffee assets/coffee_button.webp" id="36_8onr1"]
+[ext_resource type="Script" uid="uid://c4gq844k1dlxo" path="res://Scenes/workstation_button.gd" id="37_8onr1"]
+[ext_resource type="Script" uid="uid://bencjyt4yv42j" path="res://Scenes/workstation_back_button.gd" id="37_u0tsq"]
+[ext_resource type="Texture2D" uid="uid://brmhg8x2umc7r" path="res://Assets/Coffee assets/coffee_pot_label.png" id="38_u0tsq"]
+[ext_resource type="Script" uid="uid://bdb5b7t6ao57r" path="res://Scenes/coffee_label_2.gd" id="39_k7rbi"]
+[ext_resource type="Script" uid="uid://dykcwhuvy1g6v" path="res://Scenes/pot_label.gd" id="40_18fnt"]
+[ext_resource type="Texture2D" uid="uid://csd0e3pawdjck" path="res://Assets/Coffee assets/stacked_latte.png" id="41_it2t8"]
+[ext_resource type="Script" uid="uid://xnb8ei0sfox7" path="res://Scenes/sprite_2d_13.gd" id="42_1f77c"]
+[ext_resource type="Texture2D" uid="uid://cgph0pr1tras4" path="res://Assets/Coffee assets/stacked_coffee.webp" id="43_0ssu1"]
 
 [node name="coffee_workstation" type="Node2D" unique_id=1346480445]
 
@@ -47,7 +56,7 @@ scale = Vector2(2, 2)
 zoom = Vector2(2, 2)
 
 [node name="espresso_machine" parent="." unique_id=1673637665 instance=ExtResource("2_833k7")]
-position = Vector2(146, -949)
+position = Vector2(139, -689)
 scale = Vector2(4, 4)
 script = ExtResource("3_g1x2x")
 
@@ -110,21 +119,10 @@ texture = ExtResource("12_g1x2x")
 script = ExtResource("14_g3dln")
 
 [node name="regular_espresso_pot" type="Sprite2D" parent="." unique_id=1790105460]
-position = Vector2(287, -647)
+position = Vector2(299, -647)
 scale = Vector2(4, 4)
 texture = ExtResource("15_4ivsm")
 script = ExtResource("17_qoftb")
-empty_texture = ExtResource("15_4ivsm")
-level_1_texture = ExtResource("18_g3dln")
-level_2_texture = ExtResource("19_6ofcb")
-level_3_texture = ExtResource("20_liats")
-level_4_texture = ExtResource("21_v8adl")
-
-[node name="decaf_espresso_pot" type="Sprite2D" parent="." unique_id=1254801100]
-position = Vector2(143, -647)
-scale = Vector2(4, 4)
-texture = ExtResource("15_4ivsm")
-script = ExtResource("22_2ornp")
 empty_texture = ExtResource("15_4ivsm")
 level_1_texture = ExtResource("18_g3dln")
 level_2_texture = ExtResource("19_6ofcb")
@@ -209,17 +207,106 @@ offset_right = 824.0
 offset_bottom = -858.0
 script = ExtResource("33_k7rbi")
 
-[node name="Label" type="Label" parent="." unique_id=375236044]
-offset_left = 239.0
+[node name="workstation_info_label" type="Label" parent="." unique_id=375236044]
+offset_left = 56.0
 offset_top = -1032.0
 offset_right = 1016.0
-offset_bottom = -1009.0
+offset_bottom = -963.0
 theme_override_fonts/font = ExtResource("34_18fnt")
-theme_override_font_sizes/font_size = 20
-text = "To make coffee or espresso, click on the bean
-type then the machine
+theme_override_font_sizes/font_size = 19
+text = "To make coffee or espresso, click on the bean type
+then the machine. Espressos only use regular beans. Press the 
+pot then cup to fill the cup with coffee/espresso
 For lattes, use espresso and add milk"
 horizontal_alignment = 1
+
+[node name="back_button" type="TextureButton" parent="." unique_id=1962485448]
+offset_left = 509.0
+offset_top = -570.0
+offset_right = 605.0
+offset_bottom = -516.0
+texture_normal = ExtResource("35_41dfl")
+texture_hover = ExtResource("36_8onr1")
+script = ExtResource("37_u0tsq")
+
+[node name="Label2" type="Label" parent="." unique_id=1959969728]
+offset_left = 519.0
+offset_top = -562.0
+offset_right = 595.0
+offset_bottom = -524.0
+theme_override_fonts/font = ExtResource("34_18fnt")
+theme_override_font_sizes/font_size = 22
+text = "Back"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="workstation_button" type="TextureButton" parent="." unique_id=2058963933]
+offset_left = 262.0
+offset_top = -839.0
+offset_right = 732.0
+offset_bottom = -599.0
+script = ExtResource("37_8onr1")
+
+[node name="coffee_label2" type="Sprite2D" parent="." unique_id=320724718]
+position = Vector2(295.5, -642.5)
+scale = Vector2(5, 5)
+texture = ExtResource("38_u0tsq")
+script = ExtResource("39_k7rbi")
+
+[node name="pot_label" type="Label" parent="." unique_id=166820994]
+offset_left = 273.0
+offset_top = -655.0
+offset_right = 338.0
+offset_bottom = -630.0
+theme_override_fonts/font = ExtResource("34_18fnt")
+theme_override_font_sizes/font_size = 9
+text = "espresso"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("40_18fnt")
+
+[node name="coffee_label4" type="Sprite2D" parent="." unique_id=2048604338]
+position = Vector2(530, -640)
+scale = Vector2(5, 5)
+texture = ExtResource("38_u0tsq")
+
+[node name="pot_label4" type="Label" parent="." unique_id=460934696]
+offset_left = 507.0
+offset_top = -653.0
+offset_right = 572.0
+offset_bottom = -628.0
+theme_override_fonts/font = ExtResource("34_18fnt")
+theme_override_font_sizes/font_size = 9
+text = "regular"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="coffee_label5" type="Sprite2D" parent="." unique_id=60506090]
+position = Vector2(674, -640)
+scale = Vector2(5, 5)
+texture = ExtResource("38_u0tsq")
+
+[node name="pot_label5" type="Label" parent="." unique_id=2130721784]
+offset_left = 656.0
+offset_top = -652.0
+offset_right = 721.0
+offset_bottom = -627.0
+theme_override_fonts/font = ExtResource("34_18fnt")
+theme_override_font_sizes/font_size = 9
+text = "DECAF"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D13" type="Sprite2D" parent="." unique_id=594913187]
+position = Vector2(109, -904)
+scale = Vector2(2, 2)
+texture = ExtResource("41_it2t8")
+script = ExtResource("42_1f77c")
+
+[node name="Sprite2D14" type="Sprite2D" parent="." unique_id=475942278]
+position = Vector2(200, -906)
+scale = Vector2(2, 2)
+texture = ExtResource("43_0ssu1")
 
 [connection signal="pressed" from="decaf_beans2" to="decaf_beans2" method="_on_pressed"]
 [connection signal="pressed" from="decaf_beans" to="decaf_beans" method="_on_pressed"]
@@ -229,3 +316,5 @@ horizontal_alignment = 1
 [connection signal="pressed" from="espresso_machine_start" to="espresso_machine_start" method="_on_pressed"]
 [connection signal="pressed" from="coffee_machine_start" to="coffee_machine_start" method="_on_pressed"]
 [connection signal="pressed" from="decaf_beans3" to="decaf_beans3" method="_on_pressed"]
+[connection signal="pressed" from="back_button" to="back_button" method="_on_pressed"]
+[connection signal="pressed" from="workstation_button" to="workstation_button" method="_on_pressed"]

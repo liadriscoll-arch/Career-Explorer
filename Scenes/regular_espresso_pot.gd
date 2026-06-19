@@ -10,7 +10,10 @@ class_name regular_espresso_pot
 @export var level_4_texture: Texture2D
 
 func _ready():
-	visible = Global.latte_discovered
+	if Global.espresso_purchase_day != null and Global.coffee_day >= Global.espresso_purchase_day + 1:
+		visible = true
+	else:
+		visible = false
 	update_coffee_pot()
 	
 

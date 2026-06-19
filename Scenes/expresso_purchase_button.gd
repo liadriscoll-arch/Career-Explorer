@@ -5,5 +5,5 @@ extends TextureButton
 
 
 func _on_pressed() -> void:
-	Global.latte_discovered = true
-	Global.coffee_money -= 100
+	Global.ads.append(3)
+	Global.coffee_money -= 25
