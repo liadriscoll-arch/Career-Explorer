@@ -12,3 +12,4 @@ func _process(delta: float) -> void:
 	if Global.day_time >= Global.day_length:
 		get_tree().change_scene_to_file("res://Scenes/coffee_game_night.tscn")
 		Global.day_time = 0
+#hi
