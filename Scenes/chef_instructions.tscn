@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://dpwnap2xjqen0"]
+
+[ext_resource type="Texture2D" uid="uid://b4vvh6qo3lf6w" path="res://Assets/Chef assets/chef_background.png" id="1_h71ub"]
+[ext_resource type="Script" uid="uid://bggg4x3uw5xda" path="res://Scenes/chef_instructions.gd" id="1_hmatf"]
+[ext_resource type="FontFile" uid="uid://dl176n4kxwrv8" path="res://Assets/04b_30/04B_30__.TTF" id="2_w4hly"]
+[ext_resource type="Script" uid="uid://c5mqhwhobjkjk" path="res://Scenes/button.gd" id="4_i7chl"]
+[ext_resource type="Script" uid="uid://2e1exnp2766y" path="res://Scenes/button_2.gd" id="5_b2ggq"]
+
+[node name="ChefInstructions" type="Node2D" unique_id=559427166]
+script = ExtResource("1_hmatf")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=125145727]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=670680227]
+scale = Vector2(10, 10.000001)
+texture = ExtResource("1_h71ub")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1670540017]
+offset_left = -959.0
+offset_top = -541.0
+offset_right = 961.0
+offset_bottom = 539.0
+color = Color(0, 0, 0, 0.6901961)
+
+[node name="Label" type="Label" parent="." unique_id=2002909279]
+offset_left = -753.0
+offset_top = -517.0
+offset_right = 829.0
+offset_bottom = -154.0
+theme_override_fonts/font = ExtResource("2_w4hly")
+theme_override_font_sizes/font_size = 100
+text = "Welcome to your job
+as a chef!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1254013123]
+offset_left = -783.0
+offset_top = -302.0
+offset_right = 799.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("2_w4hly")
+theme_override_font_sizes/font_size = 66
+text = "Goal:"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=973939001]
+offset_left = -796.0
+offset_top = -220.0
+offset_right = 786.0
+offset_bottom = 143.0
+theme_override_fonts/font = ExtResource("2_w4hly")
+theme_override_font_sizes/font_size = 50
+text = "Keep your business up until
+the end of the week!"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=427453698]
+offset_left = -789.0
+offset_top = -70.0
+offset_right = 793.0
+offset_bottom = 293.0
+theme_override_fonts/font = ExtResource("2_w4hly")
+theme_override_font_sizes/font_size = 50
+text = "Cook different foods such as
+Pizza, Burgers, Fries, and Noodles
+to satisfy your customers"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="." unique_id=537754650]
+offset_left = -778.0
+offset_top = 117.0
+offset_right = 804.0
+offset_bottom = 480.0
+theme_override_fonts/font = ExtResource("2_w4hly")
+theme_override_font_sizes/font_size = 50
+text = "Make sure to serve your customers
+in time or risk losing your ratings...
+and your restaurant!"
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="." unique_id=1222125015]
+offset_left = -790.0
+offset_top = 301.0
+offset_right = 792.0
+offset_bottom = 664.0
+theme_override_fonts/font = ExtResource("2_w4hly")
+theme_override_font_sizes/font_size = 70
+text = "Good luck and have fun!"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1420066373]
+offset_left = -887.0
+offset_top = 372.0
+offset_right = -356.0
+offset_bottom = 526.0
+theme_override_fonts/font = ExtResource("2_w4hly")
+theme_override_font_sizes/font_size = 75
+text = "Settings"
+script = ExtResource("4_i7chl")
+
+[node name="Button2" type="Button" parent="." unique_id=809476018]
+offset_left = -263.0
+offset_top = 375.0
+offset_right = 268.0
+offset_bottom = 529.0
+theme_override_fonts/font = ExtResource("2_w4hly")
+theme_override_font_sizes/font_size = 75
+text = "Tutorial"
+script = ExtResource("5_b2ggq")
+
+[node name="Button3" type="Button" parent="." unique_id=660142026]
+offset_left = 349.0
+offset_top = 375.0
+offset_right = 880.0
+offset_bottom = 529.0
+theme_override_fonts/font = ExtResource("2_w4hly")
+theme_override_font_sizes/font_size = 75
+text = "Play"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

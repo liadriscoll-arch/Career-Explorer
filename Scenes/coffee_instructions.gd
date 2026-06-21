@@ -2,9 +2,7 @@ extends Node2D
 
 
 func _ready():
-	Global.endless = false
-	Global.coffee_difficulty = 1
-	Global.coffee_money = 100
+	Global.coffee_money = 10
 	Global.regular_coffee_beans = 0
 	Global.decaf_coffee_beans = 0
 	Global.quota

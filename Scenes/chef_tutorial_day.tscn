@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://ds81pnrvk1d4j"]
+
+[ext_resource type="Texture2D" uid="uid://b4vvh6qo3lf6w" path="res://Assets/Chef assets/chef_background.png" id="1_37k36"]
+[ext_resource type="PackedScene" uid="uid://rnmdc64dl5bb" path="res://Scenes/cheffella.tscn" id="2_1qq7p"]
+[ext_resource type="Script" uid="uid://di7yiickluxi6" path="res://Scenes/cheffella.gd" id="3_ugurg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1qq7p"]
+size = Vector2(1904, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ugurg"]
+size = Vector2(25, 608.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2hrc8"]
+size = Vector2(279.5, 198.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpuvb"]
+size = Vector2(1767, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uh7vw"]
+size = Vector2(182.5, 95.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8hv8a"]
+size = Vector2(275.5, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6qpsl"]
+size = Vector2(1410, 43)
+
+[node name="ChefTutorialDay" type="Node2D" unique_id=511923564]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=503240910]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=695404142]
+scale = Vector2(10, 10.000001)
+texture = ExtResource("1_37k36")
+
+[node name="Cheffella" parent="." unique_id=1389223012 instance=ExtResource("2_1qq7p")]
+position = Vector2(72, -422)
+scale = Vector2(6.755, 6.755)
+script = ExtResource("3_ugurg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1254276869]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2046264950]
+position = Vector2(-2, 73)
+shape = SubResource("RectangleShape2D_1qq7p")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1186430056]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=947732729]
+position = Vector2(-952.5, -238.75)
+shape = SubResource("RectangleShape2D_ugurg")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1095722804]
+position = Vector2(949, -235)
+shape = SubResource("RectangleShape2D_ugurg")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=668073097]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=872708875]
+position = Vector2(-501.75, -210.25)
+shape = SubResource("RectangleShape2D_2hrc8")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1382220212]
+position = Vector2(20, -210)
+shape = SubResource("RectangleShape2D_2hrc8")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D3" unique_id=759863039]
+position = Vector2(540, -212)
+shape = SubResource("RectangleShape2D_2hrc8")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=142601056]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4" unique_id=2025928274]
+position = Vector2(-63.5, -93)
+shape = SubResource("RectangleShape2D_tpuvb")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="." unique_id=829503074]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5" unique_id=769445697]
+position = Vector2(-849.25, -468.75)
+shape = SubResource("RectangleShape2D_uh7vw")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="." unique_id=1041887716]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6" unique_id=258543166]
+position = Vector2(-615.75, -480.5)
+shape = SubResource("RectangleShape2D_8hv8a")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="." unique_id=330259122]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7" unique_id=1117518969]
+position = Vector2(232, -490.5)
+shape = SubResource("RectangleShape2D_6qpsl")

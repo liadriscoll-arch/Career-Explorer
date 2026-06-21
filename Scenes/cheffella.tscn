@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://rnmdc64dl5bb"]
+
+[ext_resource type="Texture2D" uid="uid://bpq4no2262ewl" path="res://Assets/Sprites/Fella Sprites/pixil-frame-0.png" id="1_hv76g"]
+[ext_resource type="Texture2D" uid="uid://updxdme4uikp" path="res://Assets/Sprites/Fella Sprites/Godot Fella Idle 2.png" id="1_vnkcw"]
+[ext_resource type="Texture2D" uid="uid://cx3nd6cagq4m4" path="res://Assets/Sprites/Fella Sprites/pixil-frame-1.png" id="2_g7cdf"]
+[ext_resource type="Texture2D" uid="uid://dcpdpjlovo2tb" path="res://Assets/Sprites/Fella Sprites/GodotFella.png" id="2_i4ya8"]
+[ext_resource type="Texture2D" uid="uid://c5qqjvyhmktth" path="res://Assets/Sprites/Fella Sprites/pixil-frame-2.png" id="3_vnkcw"]
+[ext_resource type="Texture2D" uid="uid://cm5ck35r6fkjk" path="res://Assets/Sprites/Fella Sprites/pixil-frame-3.png" id="4_i4ya8"]
+[ext_resource type="Texture2D" uid="uid://88mqyeoemgh7" path="res://Assets/Sprites/Fella Sprites/pixil-frame-4.png" id="5_0jybb"]
+[ext_resource type="Texture2D" uid="uid://dycvlbdjqxkqx" path="res://Assets/Sprites/Fella Sprites/pixil-frame-5.png" id="6_7wqbt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1mb8p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vnkcw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_i4ya8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hv76g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g7cdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vnkcw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i4ya8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0jybb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7wqbt")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l7f2a"]
+radius = 6.0
+height = 20.0
+
+[node name="Cheffella" type="CharacterBody2D" unique_id=1389223012]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=138228201]
+sprite_frames = SubResource("SpriteFrames_1mb8p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1832489224]
+position = Vector2(0, 6)
+shape = SubResource("CapsuleShape2D_l7f2a")
