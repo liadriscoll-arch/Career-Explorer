@@ -1,0 +1,272 @@
+[gd_scene format=3 uid="uid://xyvav37rvlh2"]
+
+[ext_resource type="Texture2D" uid="uid://b4vvh6qo3lf6w" path="res://Assets/Chef assets/chef_background.png" id="1_ei828"]
+[ext_resource type="Texture2D" uid="uid://27kii4txrudp" path="res://Assets/Chef assets/cheffrig.png" id="2_kd6g0"]
+[ext_resource type="Texture2D" uid="uid://b60gpfnukr0yu" path="res://Assets/Chef assets/chefsettingdonebutton.png" id="3_ugvcg"]
+[ext_resource type="Texture2D" uid="uid://dild6d0ulr0bc" path="res://Assets/Chef assets/chefsettingdonebuttonhover.png" id="4_d5gul"]
+[ext_resource type="Script" uid="uid://cxp3c28h2baoo" path="res://Scenes/refinfo.gd" id="4_ugvcg"]
+[ext_resource type="Script" uid="uid://0qoa0ihp0duo" path="res://Scenes/exit.gd" id="5_ac4r3"]
+[ext_resource type="FontFile" uid="uid://dl176n4kxwrv8" path="res://Assets/04b_30/04B_30__.TTF" id="6_kd6g0"]
+[ext_resource type="Script" uid="uid://dk5srglbmhsxc" path="res://Scenes/vburg.gd" id="8_ana60"]
+[ext_resource type="Script" uid="uid://dobn5ggtja8oa" path="res://Scenes/mburg.gd" id="9_xkgok"]
+[ext_resource type="Script" uid="uid://dj086lbrf148s" path="res://Scenes/rsauc.gd" id="10_oog4s"]
+[ext_resource type="Script" uid="uid://bp1vkw6y8wt7h" path="res://Scenes/wsauc.gd" id="11_uqtbx"]
+[ext_resource type="Script" uid="uid://cfi1xygssyyee" path="res://Scenes/dough.gd" id="12_sd34k"]
+[ext_resource type="Script" uid="uid://b6mbpmxtluetf" path="res://Scenes/cfrie.gd" id="13_j4e60"]
+[ext_resource type="Script" uid="uid://jg7y4hti1j5v" path="res://Scenes/sfrie.gd" id="14_xkgok"]
+[ext_resource type="Script" uid="uid://bqd6n02jrkh0g" path="res://Scenes/proni.gd" id="15_oog4s"]
+[ext_resource type="Script" uid="uid://cihngv37slbre" path="res://Scenes/susag.gd" id="16_r7w62"]
+[ext_resource type="Script" uid="uid://djii2phwpqtmq" path="res://Scenes/mushr.gd" id="17_s1ab2"]
+[ext_resource type="Script" uid="uid://ctr18sg1fp0q3" path="res://Scenes/chese.gd" id="18_n71xr"]
+[ext_resource type="Script" uid="uid://cwew6l5uupd13" path="res://Scenes/letuc.gd" id="19_j8sj6"]
+[ext_resource type="Script" uid="uid://brhg8rbl21slm" path="res://Scenes/pickl.gd" id="20_bhxti"]
+[ext_resource type="Script" uid="uid://yxj03bypykwu" path="res://Scenes/pinap.gd" id="21_gd3ln"]
+[ext_resource type="Script" uid="uid://b4bsruelbbyfb" path="res://Scenes/boliv.gd" id="22_vlkdg"]
+[ext_resource type="Script" uid="uid://cim8xyhhe34pl" path="res://Scenes/bpepr.gd" id="23_786mi"]
+[ext_resource type="Script" uid="uid://bv65lbepco4ve" path="res://Scenes/tomat.gd" id="24_xpf2r"]
+[ext_resource type="Script" uid="uid://ddmrfsn1e0sxu" path="res://Scenes/onion.gd" id="25_uaw6h"]
+
+[node name="ChefRefrigerator" type="Node2D" unique_id=1378765479]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2048993927]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=356103719]
+z_index = -1
+scale = Vector2(10, 10.000001)
+texture = ExtResource("1_ei828")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2088636435]
+scale = Vector2(9.095, 9.095)
+texture = ExtResource("2_kd6g0")
+
+[node name="refinfo" type="Label" parent="." unique_id=365857535]
+modulate = Color(1.174932, 1.174932, 1.174932, 1)
+offset_left = -948.0
+offset_top = -498.0
+offset_right = 950.0
+offset_bottom = -430.0
+theme_override_fonts/font = ExtResource("6_kd6g0")
+theme_override_font_sizes/font_size = 67
+text = "hi"
+horizontal_alignment = 1
+script = ExtResource("4_ugvcg")
+
+[node name="exit" type="TextureButton" parent="." unique_id=1192448028]
+modulate = Color(0.65882355, 0.8862745, 0.8862745, 1)
+offset_left = 590.00006
+offset_top = 314.99994
+offset_right = 686.00006
+offset_bottom = 368.99994
+scale = Vector2(1.915, 1.915)
+texture_normal = ExtResource("3_ugvcg")
+texture_hover = ExtResource("4_d5gul")
+script = ExtResource("5_ac4r3")
+
+[node name="Label32" type="Label" parent="." unique_id=569165535]
+modulate = Color(1.174932, 1.174932, 1.174932, 1)
+offset_left = 602.0
+offset_top = 339.0
+offset_right = 837.0
+offset_bottom = 397.0
+theme_override_fonts/font = ExtResource("6_kd6g0")
+theme_override_font_sizes/font_size = 57
+text = "exit"
+
+[node name="vburg" type="Button" parent="." unique_id=2048453767]
+modulate = Color(1, 1, 1, 0)
+offset_left = -780.0
+offset_top = -426.0
+offset_right = -232.0
+offset_bottom = -208.0
+script = ExtResource("8_ana60")
+
+[node name="mburg" type="Button" parent="." unique_id=896429490]
+modulate = Color(1, 1, 1, 0)
+offset_left = -763.0
+offset_top = -193.0
+offset_right = -230.0
+offset_bottom = -5.0
+script = ExtResource("9_xkgok")
+
+[node name="rsauc" type="Button" parent="." unique_id=1299193670]
+modulate = Color(1, 1, 1, 0)
+offset_left = -159.0
+offset_top = -465.0
+offset_right = 31.0
+offset_bottom = -231.0
+script = ExtResource("10_oog4s")
+
+[node name="wsauc" type="Button" parent="." unique_id=1091574563]
+modulate = Color(1, 1, 1, 0)
+offset_left = 98.0
+offset_top = -460.0
+offset_right = 301.0
+offset_bottom = -233.0
+script = ExtResource("11_uqtbx")
+
+[node name="dough" type="Button" parent="." unique_id=1072437471]
+modulate = Color(1, 1, 1, 0)
+offset_left = -163.0
+offset_top = -226.0
+offset_right = 307.0
+offset_bottom = -7.0
+script = ExtResource("12_sd34k")
+
+[node name="cfrie" type="Button" parent="." unique_id=1309215715]
+modulate = Color(1, 1, 1, 0)
+offset_left = 356.0
+offset_top = -408.0
+offset_right = 845.0
+offset_bottom = -178.0
+script = ExtResource("13_j4e60")
+
+[node name="sfrie" type="Button" parent="." unique_id=1632415877]
+modulate = Color(1, 1, 1, 0)
+offset_left = 352.0
+offset_top = -169.0
+offset_right = 839.0
+offset_bottom = -4.0
+script = ExtResource("14_xkgok")
+
+[node name="proni" type="Button" parent="." unique_id=1218962217]
+modulate = Color(1, 1, 1, 0)
+offset_left = -854.0
+offset_top = 12.0
+offset_right = -593.0
+offset_bottom = 241.0
+script = ExtResource("15_oog4s")
+
+[node name="susag" type="Button" parent="." unique_id=1780460120]
+modulate = Color(1, 1, 1, 0)
+offset_left = -575.0
+offset_top = 12.0
+offset_right = -298.0
+offset_bottom = 246.0
+script = ExtResource("16_r7w62")
+
+[node name="mushr" type="Button" parent="." unique_id=693899445]
+modulate = Color(1, 1, 1, 0)
+offset_left = -269.0
+offset_top = 16.0
+offset_right = -6.0
+offset_bottom = 252.0
+script = ExtResource("17_s1ab2")
+
+[node name="chese" type="Button" parent="." unique_id=1906574160]
+modulate = Color(1, 1, 1, 0)
+offset_left = 12.0
+offset_top = 16.0
+offset_right = 230.0
+offset_bottom = 240.0
+script = ExtResource("18_n71xr")
+
+[node name="letuc" type="Button" parent="." unique_id=1939263097]
+modulate = Color(1, 1, 1, 0)
+offset_left = 262.0
+offset_top = 12.0
+offset_right = 514.0
+offset_bottom = 241.0
+script = ExtResource("19_j8sj6")
+
+[node name="pickl" type="Button" parent="." unique_id=643009363]
+modulate = Color(1, 1, 1, 0)
+offset_left = 534.0
+offset_top = 12.0
+offset_right = 848.0
+offset_bottom = 239.0
+script = ExtResource("20_bhxti")
+
+[node name="pinap" type="Button" parent="." unique_id=697073569]
+modulate = Color(1, 1, 1, 0)
+offset_left = -854.0
+offset_top = 253.0
+offset_right = -597.0
+offset_bottom = 477.0
+script = ExtResource("21_gd3ln")
+
+[node name="boliv" type="Button" parent="." unique_id=1532816624]
+modulate = Color(1, 1, 1, 0)
+offset_left = -587.0
+offset_top = 255.0
+offset_right = -286.0
+offset_bottom = 483.0
+script = ExtResource("22_vlkdg")
+
+[node name="bpepr" type="Button" parent="." unique_id=753734284]
+modulate = Color(1, 1, 1, 0)
+offset_left = -270.0
+offset_top = 262.0
+offset_right = -14.0
+offset_bottom = 487.0
+script = ExtResource("23_786mi")
+
+[node name="tomat" type="Button" parent="." unique_id=1369721968]
+modulate = Color(1, 1, 1, 0)
+offset_top = 265.0
+offset_right = 234.0
+offset_bottom = 484.0
+script = ExtResource("24_xpf2r")
+
+[node name="onion" type="Button" parent="." unique_id=364759389]
+modulate = Color(1, 1, 1, 0)
+offset_left = 251.0
+offset_top = 256.0
+offset_right = 507.0
+offset_bottom = 478.0
+script = ExtResource("25_uaw6h")
+
+[connection signal="pressed" from="exit" to="exit" method="_on_pressed"]
+[connection signal="mouse_entered" from="vburg" to="refinfo" method="_on_vburg_mouse_entered"]
+[connection signal="mouse_exited" from="vburg" to="refinfo" method="_on_vburg_mouse_exited"]
+[connection signal="pressed" from="vburg" to="vburg" method="_on_pressed"]
+[connection signal="mouse_entered" from="mburg" to="refinfo" method="_on_mburg_mouse_entered"]
+[connection signal="mouse_exited" from="mburg" to="refinfo" method="_on_mburg_mouse_exited"]
+[connection signal="pressed" from="mburg" to="mburg" method="_on_pressed"]
+[connection signal="mouse_entered" from="rsauc" to="refinfo" method="_on_rsauc_mouse_entered"]
+[connection signal="mouse_exited" from="rsauc" to="refinfo" method="_on_rsauc_mouse_exited"]
+[connection signal="pressed" from="rsauc" to="rsauc" method="_on_pressed"]
+[connection signal="mouse_entered" from="wsauc" to="refinfo" method="_on_wsauc_mouse_entered"]
+[connection signal="mouse_exited" from="wsauc" to="refinfo" method="_on_wsauc_mouse_exited"]
+[connection signal="pressed" from="wsauc" to="wsauc" method="_on_pressed"]
+[connection signal="mouse_entered" from="dough" to="refinfo" method="_on_dough_mouse_entered"]
+[connection signal="mouse_exited" from="dough" to="refinfo" method="_on_dough_mouse_exited"]
+[connection signal="pressed" from="dough" to="dough" method="_on_pressed"]
+[connection signal="mouse_entered" from="cfrie" to="refinfo" method="_on_cfrie_mouse_entered"]
+[connection signal="mouse_exited" from="cfrie" to="refinfo" method="_on_cfrie_mouse_exited"]
+[connection signal="pressed" from="cfrie" to="cfrie" method="_on_pressed"]
+[connection signal="mouse_entered" from="sfrie" to="refinfo" method="_on_sfrie_mouse_entered"]
+[connection signal="mouse_exited" from="sfrie" to="refinfo" method="_on_sfrie_mouse_exited"]
+[connection signal="pressed" from="sfrie" to="sfrie" method="_on_pressed"]
+[connection signal="mouse_entered" from="proni" to="refinfo" method="_on_proni_mouse_entered"]
+[connection signal="mouse_exited" from="proni" to="refinfo" method="_on_proni_mouse_exited"]
+[connection signal="pressed" from="proni" to="proni" method="_on_pressed"]
+[connection signal="mouse_entered" from="susag" to="refinfo" method="_on_susag_mouse_entered"]
+[connection signal="mouse_exited" from="susag" to="refinfo" method="_on_susag_mouse_exited"]
+[connection signal="pressed" from="susag" to="susag" method="_on_pressed"]
+[connection signal="mouse_entered" from="mushr" to="refinfo" method="_on_mushr_mouse_entered"]
+[connection signal="mouse_exited" from="mushr" to="refinfo" method="_on_mushr_mouse_exited"]
+[connection signal="pressed" from="mushr" to="mushr" method="_on_pressed"]
+[connection signal="mouse_entered" from="chese" to="refinfo" method="_on_chese_mouse_entered"]
+[connection signal="mouse_exited" from="chese" to="refinfo" method="_on_chese_mouse_exited"]
+[connection signal="pressed" from="chese" to="chese" method="_on_pressed"]
+[connection signal="mouse_entered" from="letuc" to="refinfo" method="_on_letuc_mouse_entered"]
+[connection signal="mouse_exited" from="letuc" to="refinfo" method="_on_letuc_mouse_exited"]
+[connection signal="pressed" from="letuc" to="letuc" method="_on_pressed"]
+[connection signal="mouse_entered" from="pickl" to="refinfo" method="_on_pickl_mouse_entered"]
+[connection signal="mouse_exited" from="pickl" to="refinfo" method="_on_pickl_mouse_exited"]
+[connection signal="pressed" from="pickl" to="pickl" method="_on_pressed"]
+[connection signal="mouse_entered" from="pinap" to="refinfo" method="_on_pinap_mouse_entered"]
+[connection signal="mouse_exited" from="pinap" to="refinfo" method="_on_pinap_mouse_exited"]
+[connection signal="pressed" from="pinap" to="pinap" method="_on_pressed"]
+[connection signal="mouse_entered" from="boliv" to="refinfo" method="_on_boliv_mouse_entered"]
+[connection signal="mouse_exited" from="boliv" to="refinfo" method="_on_boliv_mouse_exited"]
+[connection signal="pressed" from="boliv" to="boliv" method="_on_pressed"]
+[connection signal="mouse_entered" from="bpepr" to="refinfo" method="_on_bpepr_mouse_entered"]
+[connection signal="mouse_exited" from="bpepr" to="refinfo" method="_on_bpepr_mouse_exited"]
+[connection signal="pressed" from="bpepr" to="bpepr" method="_on_pressed"]
+[connection signal="mouse_entered" from="tomat" to="refinfo" method="_on_tomat_mouse_entered"]
+[connection signal="mouse_exited" from="tomat" to="refinfo" method="_on_tomat_mouse_exited"]
+[connection signal="pressed" from="tomat" to="tomat" method="_on_pressed"]
+[connection signal="mouse_entered" from="onion" to="refinfo" method="_on_onion_mouse_entered"]
+[connection signal="mouse_exited" from="onion" to="refinfo" method="_on_onion_mouse_exited"]
+[connection signal="pressed" from="onion" to="onion" method="_on_pressed"]

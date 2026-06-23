@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://ovbj7hdr6i7e" path="res://Scenes/cabinetarea.gd" id="5_rjejb"]
 [ext_resource type="Script" uid="uid://be6ea8o68reoy" path="res://Scenes/cabinetbox.gd" id="6_ns07t"]
 [ext_resource type="FontFile" uid="uid://dl176n4kxwrv8" path="res://Assets/04b_30/04B_30__.TTF" id="7_d5sjy"]
+[ext_resource type="Script" uid="uid://iqm7sl1kbl3m" path="res://Scenes/inventorytext.gd" id="7_i0pns"]
 [ext_resource type="Script" uid="uid://csjtrbjgyykr4" path="res://Scenes/tuttext.gd" id="8_rjejb"]
 [ext_resource type="Script" uid="uid://yh24ds6lxmwf" path="res://Scenes/pansarea.gd" id="9_3oq2i"]
 [ext_resource type="Script" uid="uid://vinfs7xycovv" path="res://Scenes/pansbox.gd" id="10_lbrew"]
@@ -123,6 +124,7 @@ scale = Vector2(10, 10.000001)
 texture = ExtResource("2_ns07t")
 
 [node name="Cheffella" parent="." unique_id=1389223012 instance=ExtResource("3_lhr4j")]
+z_index = 2
 position = Vector2(-850.99994, -229)
 scale = Vector2(5.735, 5.735)
 script = ExtResource("4_d5sjy")
@@ -141,6 +143,17 @@ when you are ready, take the customers
 order and serve them!"
 horizontal_alignment = 1
 script = ExtResource("8_rjejb")
+
+[node name="inventorytext" type="Label" parent="." unique_id=1807861250]
+offset_left = -935.0
+offset_top = 417.0
+offset_right = -451.0
+offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("7_d5sjy")
+theme_override_font_sizes/font_size = 49
+text = "In inventory:
+"
+script = ExtResource("7_i0pns")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1254276869]
 
@@ -488,6 +501,7 @@ script = ExtResource("40_i0pns")
 [connection signal="body_entered" from="trasharea" to="trasharea" method="_on_body_entered"]
 [connection signal="body_exited" from="trasharea" to="trasharea" method="_on_body_exited"]
 [connection signal="triggercolor" from="trasharea" to="trasharea/CollisionShape2D/trashbox" method="_on_trasharea_triggercolor"]
+[connection signal="action" from="fridgearea" to="." method="_on_fridgearea_action"]
 [connection signal="body_entered" from="fridgearea" to="fridgearea" method="_on_body_entered"]
 [connection signal="body_exited" from="fridgearea" to="fridgearea" method="_on_body_exited"]
 [connection signal="triggercolor" from="fridgearea" to="fridgearea/CollisionShape2D/fridgebox" method="_on_fridgearea_triggercolor"]

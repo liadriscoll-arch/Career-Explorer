@@ -4,10 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://cyrl80ncpy6c6" path="res://Assets/Chef assets/chef_cabinet.png" id="2_rivrx"]
 [ext_resource type="Texture2D" uid="uid://b60gpfnukr0yu" path="res://Assets/Chef assets/chefsettingdonebutton.png" id="3_q4reo"]
 [ext_resource type="Texture2D" uid="uid://dild6d0ulr0bc" path="res://Assets/Chef assets/chefsettingdonebuttonhover.png" id="4_r6yrb"]
-[ext_resource type="Script" path="res://Scenes/exit.gd" id="5_b3p4d"]
+[ext_resource type="Script" uid="uid://0qoa0ihp0duo" path="res://Scenes/exit.gd" id="5_b3p4d"]
 [ext_resource type="FontFile" uid="uid://dl176n4kxwrv8" path="res://Assets/04b_30/04B_30__.TTF" id="6_ngaff"]
 [ext_resource type="Script" uid="uid://cejelr36xipyr" path="res://Scenes/cabinfo.gd" id="7_b3p4d"]
 [ext_resource type="Script" uid="uid://djqe0xpd6gc4r" path="res://Scenes/cabtut.gd" id="8_ngaff"]
+[ext_resource type="Script" uid="uid://bq2uxlu2kk2a7" path="res://Scenes/gnood.gd" id="9_ngaff"]
+[ext_resource type="Script" uid="uid://cqhaobuypu0g3" path="res://Scenes/rnood.gd" id="10_kvxi1"]
+[ext_resource type="Script" uid="uid://buxi8qqm43j7d" path="res://Scenes/ketch.gd" id="11_fb6hx"]
+[ext_resource type="Script" uid="uid://c5uxumad4nr1w" path="res://Scenes/musta.gd" id="12_bh18j"]
+[ext_resource type="Script" uid="uid://1apmpp4he5cp" path="res://Scenes/pbuns.gd" id="13_5q2xt"]
+[ext_resource type="Script" uid="uid://dmm4pk3t2lim0" path="res://Scenes/sbuns.gd" id="14_b857j"]
 
 [node name="ChefCabinet" type="Node2D" unique_id=1557161920]
 
@@ -17,15 +23,6 @@
 z_index = -1
 scale = Vector2(10, 10.000001)
 texture = ExtResource("1_wugwf")
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1495935995]
-z_index = -1
-offset_left = -959.0
-offset_top = -541.0
-offset_right = 961.0
-offset_bottom = 539.0
-color = Color(0, 0, 0, 0.3882353)
-metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2132102221]
 scale = Vector2(9.095, 9.095)
@@ -81,6 +78,7 @@ offset_left = -852.0
 offset_top = -350.0
 offset_right = -379.0
 offset_bottom = -3.0
+script = ExtResource("9_ngaff")
 
 [node name="rnood" type="Button" parent="." unique_id=1856932972]
 modulate = Color(1, 1, 1, 0)
@@ -88,6 +86,7 @@ offset_left = -299.0
 offset_top = -347.0
 offset_right = 147.0
 offset_bottom = 8.0
+script = ExtResource("10_kvxi1")
 
 [node name="ketch" type="Button" parent="." unique_id=840933498]
 modulate = Color(1, 1, 1, 0)
@@ -95,6 +94,7 @@ offset_left = 162.0
 offset_top = -397.0
 offset_right = 504.0
 offset_bottom = 9.0
+script = ExtResource("11_fb6hx")
 
 [node name="musta" type="Button" parent="." unique_id=1472162970]
 modulate = Color(1, 1, 1, 0)
@@ -102,6 +102,7 @@ offset_left = 524.0
 offset_top = -408.0
 offset_right = 859.0
 offset_bottom = 5.0
+script = ExtResource("12_bh18j")
 
 [node name="pbuns" type="Button" parent="." unique_id=1798162795]
 modulate = Color(1, 1, 1, 0)
@@ -109,6 +110,7 @@ offset_left = -831.0
 offset_top = 144.0
 offset_right = -103.0
 offset_bottom = 492.0
+script = ExtResource("13_5q2xt")
 
 [node name="sbuns" type="Button" parent="." unique_id=319087619]
 modulate = Color(1, 1, 1, 0)
@@ -116,17 +118,24 @@ offset_left = 96.0
 offset_top = 132.0
 offset_right = 712.0
 offset_bottom = 492.0
+script = ExtResource("14_b857j")
 
 [connection signal="pressed" from="exit" to="exit" method="_on_pressed"]
 [connection signal="mouse_entered" from="gnood" to="cabinfo" method="_on_gnood_mouse_entered"]
 [connection signal="mouse_exited" from="gnood" to="cabinfo" method="_on_gnood_mouse_exited"]
+[connection signal="pressed" from="gnood" to="gnood" method="_on_pressed"]
 [connection signal="mouse_entered" from="rnood" to="cabinfo" method="_on_rnood_mouse_entered"]
 [connection signal="mouse_exited" from="rnood" to="cabinfo" method="_on_rnood_mouse_exited"]
+[connection signal="pressed" from="rnood" to="rnood" method="_on_pressed"]
 [connection signal="mouse_entered" from="ketch" to="cabinfo" method="_on_ketch_mouse_entered"]
 [connection signal="mouse_exited" from="ketch" to="cabinfo" method="_on_ketch_mouse_exited"]
+[connection signal="pressed" from="ketch" to="ketch" method="_on_pressed"]
 [connection signal="mouse_entered" from="musta" to="cabinfo" method="_on_musta_mouse_entered"]
 [connection signal="mouse_exited" from="musta" to="cabinfo" method="_on_musta_mouse_exited"]
+[connection signal="pressed" from="musta" to="musta" method="_on_pressed"]
 [connection signal="mouse_entered" from="pbuns" to="cabinfo" method="_on_pbuns_mouse_entered"]
 [connection signal="mouse_exited" from="pbuns" to="cabinfo" method="_on_pbuns_mouse_exited"]
+[connection signal="pressed" from="pbuns" to="pbuns" method="_on_pressed"]
 [connection signal="mouse_entered" from="sbuns" to="cabinfo" method="_on_sbuns_mouse_entered"]
 [connection signal="mouse_exited" from="sbuns" to="cabinfo" method="_on_sbuns_mouse_exited"]
+[connection signal="pressed" from="sbuns" to="sbuns" method="_on_pressed"]
