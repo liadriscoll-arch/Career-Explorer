@@ -25,6 +25,7 @@
 [ext_resource type="Script" uid="uid://cim8xyhhe34pl" path="res://Scenes/bpepr.gd" id="23_786mi"]
 [ext_resource type="Script" uid="uid://bv65lbepco4ve" path="res://Scenes/tomat.gd" id="24_xpf2r"]
 [ext_resource type="Script" uid="uid://ddmrfsn1e0sxu" path="res://Scenes/onion.gd" id="25_uaw6h"]
+[ext_resource type="Script" uid="uid://djqe0xpd6gc4r" path="res://Scenes/cabtut.gd" id="26_s1ab2"]
 
 [node name="ChefRefrigerator" type="Node2D" unique_id=1378765479]
 
@@ -214,6 +215,20 @@ offset_top = 256.0
 offset_right = 507.0
 offset_bottom = 478.0
 script = ExtResource("25_uaw6h")
+
+[node name="reftut" type="Label" parent="." unique_id=1795912188]
+visible = false
+offset_left = -900.0
+offset_top = -60.0
+offset_right = 895.0
+offset_bottom = 120.0
+theme_override_fonts/font = ExtResource("6_kd6g0")
+theme_override_font_sizes/font_size = 40
+text = "click on the foods in order to take
+them into your inventory and then go to
+the correct station to cook them!"
+horizontal_alignment = 1
+script = ExtResource("26_s1ab2")
 
 [connection signal="pressed" from="exit" to="exit" method="_on_pressed"]
 [connection signal="mouse_entered" from="vburg" to="refinfo" method="_on_vburg_mouse_entered"]
