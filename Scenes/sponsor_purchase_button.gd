@@ -7,7 +7,7 @@ extends TextureButton
 
 func _on_pressed() -> void:
 	if Global.coffee_money >= 100 * Global.coffee_week:
-		CoffeeShopMusic.play_fx(purchase_fx)
+		CoffeeShopMusic.play_sfx(purchase_fx)
 		Global.coffee_money -= 100 * Global.coffee_week
 		Global.ads.append(7)
 		Global.sponsors.append(1)

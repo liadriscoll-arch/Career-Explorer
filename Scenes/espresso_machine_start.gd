@@ -3,6 +3,8 @@ extends TextureButton
 @onready var machine_animation = $"../espresso_machine/AnimatedSprite2D"
 @onready var regular_espresso_pot: regular_espresso_pot = $"../regular_espresso_pot"
 @onready var workstation_info_label: Label = $"../workstation_info_label"
+@onready var coffee_label_2: Sprite2D = $"../coffee_label2"
+@onready var pot_label: Label = $"../pot_label"
 
 
 func _on_pressed() -> void:
@@ -31,18 +33,29 @@ func _on_pressed() -> void:
 
 	disabled = true
 	Global.espresso_brewing = true
+	
+	coffee_label_2.hide()
+	pot_label.hide()
 
 	regular_espresso_pot.visible = false
 	Global.regular_coffee_beans.remove_at(0)
-
+	
+	if !Global.expresso_speed_purchased:
+		machine_animation.speed_scale = 1.0
+	else:
+		machine_animation.speed_scale = 2.0
 	machine_animation.sprite_frames.set_animation_loop("espresso_fill", false)
 	machine_animation.play("espresso_fill")
 	await machine_animation.animation_finished
-
+	
 	machine_animation.play("default")
-
+	
+	coffee_label_2.show()
+	pot_label.show()
+	
+	
 	Global.regular_espresso_pot = 4
-	regular_espresso_pot.update_espresso_pot()
+	regular_espresso_pot.update_coffee_pot()
 	regular_espresso_pot.visible = true
 
 	Global.espresso_brewing = false

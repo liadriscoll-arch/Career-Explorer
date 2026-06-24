@@ -4,9 +4,9 @@ var full_coffee = preload("res://Assets/Coffee assets/full_coffee.webp")
 var empty_coffee = preload("res://Assets/Coffee assets/empty_coffee.webp")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if Global.drink_made == "coffee":
+	if Global.coffee_cup_made == "coffee":
 		texture = full_coffee
-	if Global.drink_made == "none":
+	if Global.coffee_cup_made == "none":
 		texture = empty_coffee
 	
 

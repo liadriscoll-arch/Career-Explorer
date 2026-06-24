@@ -11,9 +11,9 @@ func _ready() -> void:
 		visible = true
 	else:
 		visible = false
-	if Global.drink_made == "coffee":
+	if Global.latte_cup_made == "latte":
 		texture = full_latte
-	if Global.drink_made == "none":
+	if Global.latte_cup_made == "none":
 		texture = empty_latte
 
 

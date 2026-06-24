@@ -81,12 +81,12 @@ func get_customer_chance() -> float:
 	#chance increases with ads
 	chance += Global.ads.size() * (5.0 / (Global.coffee_difficulty + 1))
 	#chance determined by regular coffee price
-	chance += (5.0 + Global.coffee_difficulty - Global.regular_price) * 5.0
+	chance += (8.0 - Global.coffee_difficulty - Global.regular_price) * 5.0
 	#chance determined by latte price
 	if Global.latte_discovered:
-		chance += (8.0 + Global.coffee_difficulty - Global.latte_price) * 4.0
+		chance += (10.0 - Global.coffee_difficulty - Global.latte_price) * 4.0
 	#chance determined by decaf coffee price
-	chance += (5.0 + Global.coffee_difficulty - Global.decaf_price) * 5.0
+	chance += (8.0 - Global.coffee_difficulty - Global.decaf_price) * 5.0
 	#chance is forced between 5-85%
 	return clamp(chance, 5.0, 85.0)
 	
@@ -172,8 +172,12 @@ func customer_leaves() -> void:
 	
 	if Global.selected_cup == "latte":
 		latte_cup.texture = empty_latte
+		Global.latte_cup_made = "none"
+		Global.latte_cup_type_made = "regular"
 	elif Global.selected_cup == "coffee":
 		coffee_cup.texture = empty_coffee
+		Global.coffee_cup_made = "none"
+		Global.coffee_cup_type_made = "none"
 
 	#Reset global variables so the next drink starts fresh
 	Global.selected_cup = "none"

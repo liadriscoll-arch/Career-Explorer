@@ -4,7 +4,7 @@ extends Node2D
 func _ready():
 	MainGameMusic.stop()
 	CoffeeShopMusic.play_coffee_music()
-	Global.coffee_money = 100
+	Global.coffee_money = 1000
 	Global.regular_coffee_beans = []
 	Global.decaf_coffee_beans  = []
 	Global.quota = (500 * ((Global.coffee_difficulty + 1)/2)) 
@@ -29,7 +29,7 @@ func _ready():
 	Global.coffee_cup_made = "none"
 	Global.drink_selected = "none"
 	Global.coffee_cup_type_made = "none"
-	Global.latte_cup_made = null
+	Global.latte_cup_made = "none"
 	Global.latte_cup_type_made = "regular"
 	Global.selected_cup = "none"
 	Global.espresso_purchase_day = 10

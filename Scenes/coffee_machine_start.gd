@@ -42,6 +42,12 @@ func _on_pressed() -> void:
 		return
 
 	machine_animation.sprite_frames.set_animation_loop("coffee_fill", false)
+	
+	if !Global.coffee_speed_purchased:
+		machine_animation.speed_scale = 1.0
+	else:
+		machine_animation.speed_scale = 2.0
+		
 	machine_animation.play("coffee_fill")
 
 	await machine_animation.animation_finished

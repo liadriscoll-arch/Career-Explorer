@@ -11,9 +11,9 @@ var empty_coffee = preload("res://Assets/Coffee assets/empty_coffee.webp")
 
 
 func _ready() -> void:
-	if Global.drink_made == "coffee":
+	if Global.coffee_cup_made == "coffee":
 		fella_coffee_empty.texture = full_coffee
-	if Global.drink_made == "none":
+	if Global.coffee_cup_made == "none":
 		fella_coffee_empty.texture = empty_coffee
 
 func _on_pressed() -> void:
@@ -23,7 +23,7 @@ func _on_pressed() -> void:
 		Global.type_made = Global.coffee_cup_type_made
 		return
 
-	if Global.drink_selected == "decaf_coffee":
+	if Global.drink_selected == "decaf_coffee" and Global.decaf_coffee_pot >= 1:
 		Global.coffee_cup_made = "coffee"
 		Global.coffee_cup_type_made = "decaf"
 
@@ -35,7 +35,7 @@ func _on_pressed() -> void:
 		Global.decaf_coffee_pot -= 1
 		decaf_coffee_pot.update_coffee_pot()
 
-	elif Global.drink_selected == "regular_coffee":
+	elif Global.drink_selected == "regular_coffee" and Global.regular_coffee_pot >= 1:
 		Global.coffee_cup_made = "coffee"
 		Global.coffee_cup_type_made = "regular"
 
@@ -46,3 +46,5 @@ func _on_pressed() -> void:
 		fella_coffee_empty.texture = full_coffee
 		Global.regular_coffee_pot -= 1
 		regular_coffee_pot.update_coffee_pot()
+	else: 
+		return

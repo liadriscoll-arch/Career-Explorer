@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://cqjpdtecakya5" path="res://Assets/Coffee assets/esspresso_frames/pixil-frame-0.png" id="17_ibwl0"]
 [ext_resource type="Script" uid="uid://cg04vf1xnv6y2" path="res://Scenes/expresso_image.gd" id="18_qc307"]
 [ext_resource type="Script" uid="uid://dvc42trs7m0mb" path="res://Scenes/sponsor_image.gd" id="19_bgk1g"]
+[ext_resource type="Script" uid="uid://c10tbvbo76sbh" path="res://Scenes/espresso_machine_price_label.gd" id="19_ixeop"]
 [ext_resource type="Texture2D" uid="uid://r53paoejlcea" path="res://Assets/Coffee assets/coffee_sponsor.webp" id="20_f8jj5"]
 [ext_resource type="Script" uid="uid://cnv3v4vcerf3k" path="res://Scenes/shop_ads_label.gd" id="21_bgk1g"]
 [ext_resource type="Script" uid="uid://bwltwxyiijbsh" path="res://Scenes/coffee_speed_purchase_button.gd" id="22_3nurt"]
@@ -234,6 +235,7 @@ theme_override_font_sizes/font_size = 40
 text = "100"
 horizontal_alignment = 1
 vertical_alignment = 1
+script = ExtResource("19_ixeop")
 
 [node name="sponsor_price" type="Label" parent="." unique_id=1135017860]
 offset_left = 311.00003

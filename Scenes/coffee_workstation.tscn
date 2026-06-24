@@ -35,6 +35,7 @@
 [ext_resource type="Script" uid="uid://bfbclxy2duilj" path="res://Scenes/decaf_beans_3.gd" id="33_k7rbi"]
 [ext_resource type="FontFile" uid="uid://dl176n4kxwrv8" path="res://Assets/04b_30/04B_30__.TTF" id="34_18fnt"]
 [ext_resource type="Texture2D" uid="uid://dye22cfhsbsru" path="res://Assets/Coffee assets/coffee_button_hover.webp" id="35_41dfl"]
+[ext_resource type="Script" uid="uid://dwh2llxvrv4ku" path="res://Scenes/workstation_info_label.gd" id="35_yubqw"]
 [ext_resource type="Texture2D" uid="uid://btl53kqnxqrep" path="res://Assets/Coffee assets/coffee_button.webp" id="36_8onr1"]
 [ext_resource type="Script" uid="uid://bencjyt4yv42j" path="res://Scenes/workstation_back_button.gd" id="37_u0tsq"]
 [ext_resource type="Texture2D" uid="uid://brmhg8x2umc7r" path="res://Assets/Coffee assets/coffee_pot_label.png" id="38_u0tsq"]
@@ -53,6 +54,7 @@
 [ext_resource type="Script" uid="uid://dwd61b13bwgki" path="res://Scenes/decaf_selected.gd" id="50_npouq"]
 [ext_resource type="Script" uid="uid://camorlcjgpq8j" path="res://Scenes/espresso_selected.gd" id="51_185hx"]
 [ext_resource type="Script" uid="uid://ma5wlf0425ol" path="res://Scenes/throw_out.gd" id="53_7u1qw"]
+[ext_resource type="Script" uid="uid://cguwtc7wm4e2i" path="res://Scenes/selected_drink_info.gd" id="55_idvt6"]
 
 [node name="coffee_workstation" type="Node2D" unique_id=1346480445]
 script = ExtResource("1_dnv6u")
@@ -230,6 +232,7 @@ then the machine. Espressos only use regular beans. Press the
 pot then cup to fill the cup with coffee/espresso
 For lattes, use espresso and add milk"
 horizontal_alignment = 1
+script = ExtResource("35_yubqw")
 
 [node name="back_button" type="TextureButton" parent="." unique_id=1962485448]
 offset_left = 491.0
@@ -313,7 +316,7 @@ scale = Vector2(2, 2)
 texture = ExtResource("43_0ssu1")
 
 [node name="fella_latte_empty" type="Sprite2D" parent="." unique_id=768782321]
-position = Vector2(419, -643)
+position = Vector2(424, -644)
 scale = Vector2(2, 2)
 texture = ExtResource("44_185hx")
 script = ExtResource("45_7u1qw")
@@ -324,10 +327,10 @@ scale = Vector2(2, 2)
 texture = ExtResource("45_2ud7s")
 
 [node name="fill_latte" type="TextureButton" parent="." unique_id=449019988]
-offset_left = 375.0
-offset_top = -651.0
-offset_right = 464.0
-offset_bottom = -598.0
+offset_left = 379.0
+offset_top = -652.0
+offset_right = 468.0
+offset_bottom = -599.0
 script = ExtResource("46_7u1qw")
 
 [node name="fill_coffee" type="TextureButton" parent="." unique_id=1075611796]
@@ -359,15 +362,17 @@ offset_bottom = -601.0
 script = ExtResource("50_npouq")
 
 [node name="espresso_selected" type="TextureButton" parent="." unique_id=1155108888]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 238.0
+offset_top = -695.0
+offset_right = 367.0
+offset_bottom = -601.0
 script = ExtResource("51_185hx")
 
 [node name="Customer_timer" type="Timer" parent="." unique_id=1329554215]
 wait_time = 2.0
 autostart = true
 
-[node name="back_button2" type="TextureButton" parent="." unique_id=1427367071]
+[node name="throw_out" type="TextureButton" parent="." unique_id=1427367071]
 offset_left = 881.0
 offset_top = -571.0
 offset_right = 977.0
@@ -388,6 +393,17 @@ out"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="selected_drink_info" type="Label" parent="." unique_id=378399035]
+offset_left = 81.0
+offset_top = -555.0
+offset_right = 279.0
+offset_bottom = -517.0
+theme_override_fonts/font = ExtResource("34_18fnt")
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("55_idvt6")
+
 [connection signal="pressed" from="decaf_beans2" to="decaf_beans2" method="_on_pressed"]
 [connection signal="pressed" from="decaf_beans" to="decaf_beans" method="_on_pressed"]
 [connection signal="pressed" from="regular_beans3" to="regular_beans3" method="_on_pressed"]
@@ -405,4 +421,4 @@ vertical_alignment = 1
 [connection signal="pressed" from="espresso_selected" to="espresso_selected" method="_on_pressed"]
 [connection signal="timeout" from="Customer_timer" to="." method="_on_customer_timer_timeout"]
 [connection signal="timeout" from="Customer_timer" to="Customer_timer" method="_on_timeout"]
-[connection signal="pressed" from="back_button2" to="back_button2" method="_on_pressed"]
+[connection signal="pressed" from="throw_out" to="throw_out" method="_on_pressed"]
