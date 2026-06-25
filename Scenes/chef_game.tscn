@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://be6ea8o68reoy" path="res://Scenes/cabinetbox.gd" id="6_ns07t"]
 [ext_resource type="FontFile" uid="uid://dl176n4kxwrv8" path="res://Assets/04b_30/04B_30__.TTF" id="7_d5sjy"]
 [ext_resource type="Script" uid="uid://iqm7sl1kbl3m" path="res://Scenes/inventorytext.gd" id="7_i0pns"]
+[ext_resource type="Script" uid="uid://codgjioplnmm7" path="res://Scenes/alertbox.gd" id="8_jtjpp"]
 [ext_resource type="Script" uid="uid://csjtrbjgyykr4" path="res://Scenes/tuttext.gd" id="8_rjejb"]
 [ext_resource type="Script" uid="uid://yh24ds6lxmwf" path="res://Scenes/pansarea.gd" id="9_3oq2i"]
 [ext_resource type="Script" uid="uid://vinfs7xycovv" path="res://Scenes/pansbox.gd" id="10_lbrew"]
@@ -154,6 +155,18 @@ theme_override_font_sizes/font_size = 49
 text = "In inventory:
 "
 script = ExtResource("7_i0pns")
+
+[node name="alertbox" type="Label" parent="." unique_id=2063416349]
+offset_left = -386.0
+offset_top = 420.0
+offset_right = 424.0
+offset_bottom = 523.0
+theme_override_fonts/font = ExtResource("7_d5sjy")
+theme_override_font_sizes/font_size = 30
+text = "Alerts:
+"
+horizontal_alignment = 1
+script = ExtResource("8_jtjpp")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1254276869]
 
@@ -491,6 +504,7 @@ script = ExtResource("40_i0pns")
 [connection signal="action" from="cabinetarea" to="." method="_on_cabinetarea_action"]
 [connection signal="body_entered" from="cabinetarea" to="cabinetarea" method="_on_body_entered"]
 [connection signal="body_exited" from="cabinetarea" to="cabinetarea" method="_on_body_exited"]
+[connection signal="invfull" from="cabinetarea" to="alertbox" method="_on_cabinetarea_invfull"]
 [connection signal="triggercolor" from="cabinetarea" to="cabinetarea/CollisionShape2D/cabinetbox" method="_on_cabinetarea_triggercolor"]
 [connection signal="body_entered" from="assemblyarea" to="assemblyarea" method="_on_body_entered"]
 [connection signal="body_exited" from="assemblyarea" to="assemblyarea" method="_on_body_exited"]
@@ -498,12 +512,15 @@ script = ExtResource("40_i0pns")
 [connection signal="body_entered" from="sinkarea" to="sinkarea" method="_on_body_entered"]
 [connection signal="body_exited" from="sinkarea" to="sinkarea" method="_on_body_exited"]
 [connection signal="triggercolor" from="sinkarea" to="sinkarea/CollisionShape2D/sinkbox" method="_on_sinkarea_triggercolor"]
+[connection signal="action" from="trasharea" to="inventorytext" method="_on_trasharea_action"]
+[connection signal="action" from="trasharea" to="alertbox" method="_on_trasharea_action"]
 [connection signal="body_entered" from="trasharea" to="trasharea" method="_on_body_entered"]
 [connection signal="body_exited" from="trasharea" to="trasharea" method="_on_body_exited"]
 [connection signal="triggercolor" from="trasharea" to="trasharea/CollisionShape2D/trashbox" method="_on_trasharea_triggercolor"]
 [connection signal="action" from="fridgearea" to="." method="_on_fridgearea_action"]
 [connection signal="body_entered" from="fridgearea" to="fridgearea" method="_on_body_entered"]
 [connection signal="body_exited" from="fridgearea" to="fridgearea" method="_on_body_exited"]
+[connection signal="invfull" from="fridgearea" to="alertbox" method="_on_fridgearea_invfull"]
 [connection signal="triggercolor" from="fridgearea" to="fridgearea/CollisionShape2D/fridgebox" method="_on_fridgearea_triggercolor"]
 [connection signal="body_entered" from="burboxarea" to="burboxarea" method="_on_body_entered"]
 [connection signal="body_exited" from="burboxarea" to="burboxarea" method="_on_body_exited"]
