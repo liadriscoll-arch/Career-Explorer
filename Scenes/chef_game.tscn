@@ -12,12 +12,19 @@
 [ext_resource type="Script" uid="uid://csjtrbjgyykr4" path="res://Scenes/tuttext.gd" id="8_rjejb"]
 [ext_resource type="Script" uid="uid://yh24ds6lxmwf" path="res://Scenes/pansarea.gd" id="9_3oq2i"]
 [ext_resource type="Script" uid="uid://vinfs7xycovv" path="res://Scenes/pansbox.gd" id="10_lbrew"]
+[ext_resource type="Texture2D" uid="uid://ctpo62hcsmcc" path="res://Assets/Chef assets/cpat.png" id="11_kw6j8"]
 [ext_resource type="Script" uid="uid://blvhbxry6iobq" path="res://Scenes/fryerarea.gd" id="11_lup6s"]
 [ext_resource type="Script" uid="uid://bycgo4i6usqmc" path="res://Scenes/fryerbox.gd" id="12_j8ub6"]
+[ext_resource type="Texture2D" uid="uid://ixrxdj4l84vk" path="res://Assets/Chef assets/ocpat.png" id="12_mhlom"]
+[ext_resource type="Texture2D" uid="uid://domrj4og3oli" path="res://Assets/Chef assets/ucpat.png" id="13_atguy"]
 [ext_resource type="Script" uid="uid://jkkdsv4va2xb" path="res://Scenes/assemblyarea.gd" id="13_ybsrn"]
+[ext_resource type="Script" uid="uid://c0nyy78qa78ji" path="res://Scenes/pat_1.gd" id="14_mhlom"]
 [ext_resource type="Script" uid="uid://cd8y4i7csewup" path="res://Scenes/assemblybox.gd" id="14_s1bym"]
+[ext_resource type="Script" uid="uid://cst1ht4bkwklg" path="res://Scenes/pat_2.gd" id="15_tyxk7"]
 [ext_resource type="Script" uid="uid://c8no14cqcwyr5" path="res://Scenes/sinkarea.gd" id="15_y2t6b"]
+[ext_resource type="Script" uid="uid://wpsekae2w6bm" path="res://Scenes/pat_3.gd" id="16_44oy7"]
 [ext_resource type="Script" uid="uid://cd0lv53s4ecry" path="res://Scenes/sinkbox.gd" id="16_wtkrp"]
+[ext_resource type="Script" uid="uid://02btv8pbgyts" path="res://Scenes/pat_4.gd" id="17_36th7"]
 [ext_resource type="Script" uid="uid://c4rspbf11dmhi" path="res://Scenes/trasharea.gd" id="17_xyy7s"]
 [ext_resource type="Script" uid="uid://wr88p64ydwey" path="res://Scenes/trashbox.gd" id="18_nuu6k"]
 [ext_resource type="Script" uid="uid://v2w0dykbhj7g" path="res://Scenes/fridgearea.gd" id="19_td1iv"]
@@ -66,6 +73,23 @@ size = Vector2(1410, 43)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lup6s"]
 size = Vector2(145.5, 44.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8cuap"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_atguy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kw6j8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mhlom")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3oq2i"]
 size = Vector2(201, 20)
@@ -147,19 +171,19 @@ script = ExtResource("8_rjejb")
 
 [node name="inventorytext" type="Label" parent="." unique_id=1807861250]
 offset_left = -935.0
-offset_top = 417.0
+offset_top = 420.0
 offset_right = -451.0
-offset_bottom = 520.0
+offset_bottom = 523.0
 theme_override_fonts/font = ExtResource("7_d5sjy")
-theme_override_font_sizes/font_size = 49
+theme_override_font_sizes/font_size = 30
 text = "In inventory:
 "
 script = ExtResource("7_i0pns")
 
 [node name="alertbox" type="Label" parent="." unique_id=2063416349]
-offset_left = -386.0
+offset_left = -512.0
 offset_top = 420.0
-offset_right = 424.0
+offset_right = 548.0
 offset_bottom = 523.0
 theme_override_fonts/font = ExtResource("7_d5sjy")
 theme_override_font_sizes/font_size = 30
@@ -237,6 +261,34 @@ offset_right = 94.75
 offset_bottom = 11.25
 color = Color(1, 1, 1, 0.3529412)
 script = ExtResource("10_lbrew")
+
+[node name="pat1" type="AnimatedSprite2D" parent="pansarea" unique_id=150550252]
+visible = false
+position = Vector2(-905.125, -485.12503)
+scale = Vector2(10.083334, 10.083323)
+sprite_frames = SubResource("SpriteFrames_8cuap")
+script = ExtResource("14_mhlom")
+
+[node name="pat2" type="AnimatedSprite2D" parent="pansarea" unique_id=1176825302]
+visible = false
+position = Vector2(-795, -484.99997)
+scale = Vector2(10.083334, 10.083323)
+sprite_frames = SubResource("SpriteFrames_8cuap")
+script = ExtResource("15_tyxk7")
+
+[node name="pat3" type="AnimatedSprite2D" parent="pansarea" unique_id=434277463]
+visible = false
+position = Vector2(-905, -415)
+scale = Vector2(10.083334, 10.083323)
+sprite_frames = SubResource("SpriteFrames_8cuap")
+script = ExtResource("16_44oy7")
+
+[node name="pat4" type="AnimatedSprite2D" parent="pansarea" unique_id=88031290]
+visible = false
+position = Vector2(-795, -414.99997)
+scale = Vector2(10.083334, 10.083323)
+sprite_frames = SubResource("SpriteFrames_8cuap")
+script = ExtResource("17_36th7")
 
 [node name="fryerarea" type="Area2D" parent="." unique_id=654290410]
 script = ExtResource("11_lup6s")
@@ -497,6 +549,10 @@ script = ExtResource("40_i0pns")
 [connection signal="openedmenu" from="." to="Cheffella" method="_on_chef_game_openedmenu"]
 [connection signal="body_entered" from="pansarea" to="pansarea" method="_on_body_entered"]
 [connection signal="body_exited" from="pansarea" to="pansarea" method="_on_body_exited"]
+[connection signal="firstinteract" from="pansarea" to="pansarea/pat1" method="_on_pansarea_firstinteract"]
+[connection signal="fourthinteract" from="pansarea" to="pansarea/pat4" method="_on_pansarea_fourthinteract"]
+[connection signal="secondinteract" from="pansarea" to="pansarea/pat2" method="_on_pansarea_secondinteract"]
+[connection signal="thirdinteract" from="pansarea" to="pansarea/pat3" method="_on_pansarea_thirdinteract"]
 [connection signal="triggercolor" from="pansarea" to="pansarea/CollisionShape2D/pansbox" method="_on_pansarea_triggercolor"]
 [connection signal="body_entered" from="fryerarea" to="fryerarea" method="_on_body_entered"]
 [connection signal="body_exited" from="fryerarea" to="fryerarea" method="_on_body_exited"]
