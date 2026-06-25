@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cr051quin6qai" path="res://Assets/Sprites/Four Seasons Platformer Tileset [16x16][FREE] - RottingPixels/Four Seasons Platformer Tileset [16x16][FREE] - RottingPixels/four-seasons-tileset.png" id="2_0e3vx"]
 [ext_resource type="PackedScene" uid="uid://blue7tffji4dv" path="res://Scenes/fella.tscn" id="3_0e3vx"]
 [ext_resource type="PackedScene" uid="uid://5gc8i76wdp7c" path="res://Scenes/coffee_building.tscn" id="4_6j5ir"]
+[ext_resource type="PackedScene" uid="uid://doosqokssycug" path="res://Scenes/fella_house.tscn" id="5_18r40"]
 [ext_resource type="Script" uid="uid://b180cvnoaqywr" path="res://Scenes/kill_zone.gd" id="5_bb2iq"]
 [ext_resource type="PackedScene" uid="uid://bqohvtqttsbyq" path="res://Scenes/chef_building.tscn" id="5_mgc0q"]
 
@@ -210,6 +211,10 @@ position = Vector2(-160, -32)
 
 [node name="coffee_building" parent="." unique_id=1259508689 instance=ExtResource("4_6j5ir")]
 position = Vector2(240, -32)
+
+[node name="fella_house" parent="." unique_id=1170412456 instance=ExtResource("5_18r40")]
+position = Vector2(40, -16)
+scale = Vector2(1.5, 1.5)
 
 [node name="kill_zone" type="Area2D" parent="." unique_id=1319144290]
 script = ExtResource("5_bb2iq")
