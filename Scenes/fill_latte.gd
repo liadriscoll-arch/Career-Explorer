@@ -37,10 +37,10 @@ func _on_pressed() -> void:
 		Global.latte_cup_type_made = "regular"
 		Global.coffee_milk -= 1
 
-	elif Global.drink_selected == "espresso" and Global.latte_cup_made == "none" and Global.espresso_coffee_pot >= 1:
+	elif Global.drink_selected == "espresso" and Global.latte_cup_made == "none" and Global.regular_espresso_pot >= 1:
 		Global.latte_cup_made = "espresso"
 		Global.latte_cup_type_made = "regular"
-		Global.espresso_coffee_pot -= 1
+		Global.regular_espresso_pot -= 1
 		regular_espresso_pot.update_coffee_pot()
 
 	elif Global.drink_selected == "milk" and Global.latte_cup_made == "espresso" and Global.coffee_milk >= 1:
@@ -49,10 +49,10 @@ func _on_pressed() -> void:
 		Global.coffee_milk -= 1
 		fella_latte_empty.texture = full_latte
 
-	elif Global.drink_selected == "espresso" and Global.latte_cup_made == "milk" and Global.espresso_coffee_pot >= 1:
+	elif Global.drink_selected == "espresso" and Global.latte_cup_made == "milk" and Global.regular_espresso_pot >= 1:
 		Global.latte_cup_made = "latte"
 		Global.latte_cup_type_made = "regular"
-		Global.espresso_coffee_pot -= 1
+		Global.regular_espresso_pot -= 1
 		regular_espresso_pot.update_coffee_pot()
 		fella_latte_empty.texture = full_latte
 

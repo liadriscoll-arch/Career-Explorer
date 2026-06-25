@@ -224,7 +224,8 @@ wait_time = 2.0
 [node name="Fella" parent="." unique_id=228294491 instance=ExtResource("3_0e3vx")]
 position = Vector2(40, 32)
 
-[node name="Camera2D" type="Camera2D" parent="Fella" unique_id=1199157669]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1199157669]
+position = Vector2(1000, 0)
 zoom = Vector2(2.7, 2.7)
 limit_left = -9999912
 limit_top = -9999997
