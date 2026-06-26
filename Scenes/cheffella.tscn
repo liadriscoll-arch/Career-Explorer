@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dkx8bryqojf7o" path="res://Assets/Chef assets/pixilart-frames (13)/pixil-frame-0.png" id="1_23axk"]
 [ext_resource type="Texture2D" uid="uid://cvo3xspgvumpu" path="res://Assets/Chef assets/pixilart-frames (13)/pixil-frame-1.png" id="2_172wo"]
+[ext_resource type="Texture2D" uid="uid://b1xit1ijetb5f" path="res://Assets/Chef assets/truechefinteracting.png" id="3_172wo"]
 [ext_resource type="Texture2D" uid="uid://ej6m350p03w4" path="res://Assets/Chef assets/pixilart-frames (12)/pixil-frame-0.png" id="3_sry1o"]
 [ext_resource type="Texture2D" uid="uid://bkflm8boxtsej" path="res://Assets/Chef assets/pixilart-frames (12)/pixil-frame-1.png" id="4_uwm45"]
 [ext_resource type="Texture2D" uid="uid://dqtw80ciemujw" path="res://Assets/Chef assets/pixilart-frames (12)/pixil-frame-2.png" id="5_d6s4m"]
@@ -35,6 +36,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_172wo")
+}],
+"loop": true,
+"name": &"interacting",
 "speed": 5.0
 }, {
 "frames": [{
@@ -124,8 +133,7 @@ height = 20.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=138228201]
 sprite_frames = SubResource("SpriteFrames_1mb8p")
-animation = &"walkingup"
-frame_progress = 0.5054134
+animation = &"interacting"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1832489224]
 position = Vector2(0, 6)

@@ -15,7 +15,7 @@
 [ext_resource type="Script" uid="uid://mf8rfseapw4e" path="res://Scenes/chef_refrigerator.gd" id="8_oyw88"]
 [ext_resource type="Script" uid="uid://csjtrbjgyykr4" path="res://Scenes/tuttext.gd" id="8_rjejb"]
 [ext_resource type="Script" uid="uid://yh24ds6lxmwf" path="res://Scenes/pansarea.gd" id="9_3oq2i"]
-[ext_resource type="Texture2D" uid="uid://crs38oemip8a3" path="res://Assets/Chef assets/chefbackground.png" id="9_aoin3"]
+[ext_resource type="Texture2D" uid="uid://rlstm7mlg2d1" path="res://Assets/Chef assets/truechefbackground.png" id="9_b10uq"]
 [ext_resource type="Script" uid="uid://vinfs7xycovv" path="res://Scenes/pansbox.gd" id="10_lbrew"]
 [ext_resource type="Texture2D" uid="uid://ctpo62hcsmcc" path="res://Assets/Chef assets/cpat.png" id="11_kw6j8"]
 [ext_resource type="Script" uid="uid://blvhbxry6iobq" path="res://Scenes/fryerarea.gd" id="11_lup6s"]
@@ -36,15 +36,9 @@
 [ext_resource type="Script" uid="uid://cajit3wtnw4mv" path="res://Scenes/fridgebox.gd" id="20_o7sdc"]
 [ext_resource type="Script" uid="uid://b5ejmi5e34qha" path="res://Scenes/burboxarea.gd" id="21_o6kw2"]
 [ext_resource type="Script" uid="uid://qi26eol082ah" path="res://Scenes/burboxbox.gd" id="22_50q82"]
-[ext_resource type="Script" uid="uid://cxlu0gugv7aq8" path="res://Scenes/fryboxarea.gd" id="23_psavi"]
-[ext_resource type="Script" uid="uid://wpgec8ec03w6" path="res://Scenes/fryboxbox.gd" id="24_orc43"]
-[ext_resource type="Script" uid="uid://b6r7tjcnfvv6l" path="res://Scenes/pizboxarea.gd" id="25_jvc0u"]
-[ext_resource type="Script" uid="uid://cu56sr05h31de" path="res://Scenes/pizboxbox.gd" id="26_fgjqp"]
 [ext_resource type="Texture2D" uid="uid://bas0a3t7tjduy" path="res://Assets/Chef assets/ucfry.png" id="26_oxamj"]
 [ext_resource type="Texture2D" uid="uid://c7owcqhrbfuag" path="res://Assets/Chef assets/cfry.png" id="27_glv7d"]
-[ext_resource type="Script" uid="uid://c2unag4wgy68m" path="res://Scenes/noodboxarea.gd" id="27_hb5c8"]
 [ext_resource type="Texture2D" uid="uid://dylh1m3brdaot" path="res://Assets/Chef assets/ocfry.png" id="28_aoin3"]
-[ext_resource type="Script" uid="uid://m2e7q2wkfsx4" path="res://Scenes/noodboxbox.gd" id="28_grtg1"]
 [ext_resource type="Script" uid="uid://bfa67f3jag6bl" path="res://Scenes/ovenarea.gd" id="29_6hoiv"]
 [ext_resource type="Script" uid="uid://ci5gc5p6oyav" path="res://Scenes/fry_1.gd" id="29_aoin3"]
 [ext_resource type="Script" uid="uid://bu84tgtl73264" path="res://Scenes/ovenbox.gd" id="30_2cbih"]
@@ -54,14 +48,97 @@
 [ext_resource type="Script" uid="uid://bup1kbcxrnty7" path="res://Scenes/regarea.gd" id="33_mm3hm"]
 [ext_resource type="Script" uid="uid://dshhp0lk2gbyu" path="res://Scenes/regbox.gd" id="34_bpfnj"]
 [ext_resource type="Script" uid="uid://bs3a0p2dlv4v8" path="res://Scenes/servearea.gd" id="35_ta4t1"]
+[ext_resource type="Texture2D" uid="uid://cq1d82oei3s67" path="res://Assets/Chef assets/czpiz.png" id="35_unffl"]
 [ext_resource type="Script" uid="uid://dbr6xfryhculn" path="res://Scenes/servebox.gd" id="36_3usjt"]
+[ext_resource type="Texture2D" uid="uid://cq5q2h1jhte7t" path="res://Assets/Chef assets/plpiz.png" id="36_b6yl8"]
+[ext_resource type="Texture2D" uid="uid://3i32hxq36h27" path="res://Assets/Chef assets/rspiz.png" id="37_lkadl"]
 [ext_resource type="Script" uid="uid://dwxqcsxmrq3ac" path="res://Scenes/bookarea.gd" id="37_np0p6"]
 [ext_resource type="Script" uid="uid://vflxrc4xoeg3" path="res://Scenes/bookbox.gd" id="38_vfh5y"]
+[ext_resource type="Texture2D" uid="uid://cyuh6cmvh5p42" path="res://Assets/Chef assets/wspiz.png" id="38_wcume"]
 [ext_resource type="Script" uid="uid://c3go5tyrbk2q7" path="res://Scenes/orderarea.gd" id="39_7vqhc"]
+[ext_resource type="Texture2D" uid="uid://b413qc3h5yuvg" path="res://Assets/Chef assets/bofry.png" id="39_74i15"]
+[ext_resource type="Script" uid="uid://b6kbqwqydcmvx" path="res://Scenes/piza_1.gd" id="39_b6yl8"]
 [ext_resource type="Script" uid="uid://cnssl65xxpjid" path="res://Scenes/trash_2_area.gd" id="39_fac7f"]
 [ext_resource type="Script" uid="uid://7h2h2ugl3fo0" path="res://Scenes/trashbox_2.gd" id="39_lxt0n"]
 [ext_resource type="Script" uid="uid://spjx4ba137st" path="res://Scenes/orderbox.gd" id="40_i0pns"]
+[ext_resource type="Texture2D" uid="uid://bs5sd0pfhm0tn" path="res://Assets/Chef assets/petop.png" id="40_sua30"]
+[ext_resource type="Texture2D" uid="uid://bit6t1h5uqbgx" path="res://Assets/Chef assets/satop.png" id="41_4k46j"]
+[ext_resource type="Script" uid="uid://cj6axbvp0g0vm" path="res://Scenes/bol.gd" id="41_lkadl"]
+[ext_resource type="Texture2D" uid="uid://c8x8lftjc4oog" path="res://Assets/Chef assets/gptop.png" id="42_bxirh"]
+[ext_resource type="Texture2D" uid="uid://co733pjgulakk" path="res://Assets/Chef assets/pitop.png" id="43_4kcmw"]
+[ext_resource type="Script" uid="uid://buf886h4d81al" path="res://Scenes/pep.gd" id="43_wcume"]
+[ext_resource type="Texture2D" uid="uid://7wktfj0p0luf" path="res://Assets/Chef assets/mutop.png" id="44_da6c2"]
+[ext_resource type="Script" uid="uid://dxsata6sr2p62" path="res://Scenes/sus.gd" id="45_74i15"]
+[ext_resource type="Script" uid="uid://cq4f5ldqyvod" path="res://Scenes/gep.gd" id="47_sua30"]
+[ext_resource type="Script" uid="uid://bh0pb0q3stf23" path="res://Scenes/pin.gd" id="49_bxirh"]
 [ext_resource type="PackedScene" uid="uid://b7x2ojjt4ncvy" path="res://Scenes/chef_cabinet.tscn" id="50_44oy7"]
+[ext_resource type="Script" uid="uid://8s067rwa4oli" path="res://Scenes/mus.gd" id="51_4kcmw"]
+[ext_resource type="Script" uid="uid://kaeojlxeq0ct" path="res://Scenes/piza_2.gd" id="52_74i15"]
+[ext_resource type="Script" uid="uid://cs81s1c55ee1o" path="res://Scenes/bol_2.gd" id="53_4k46j"]
+[ext_resource type="Texture2D" uid="uid://brmqixd31g231" path="res://Assets/Chef assets/ucpiz.png" id="53_b10uq"]
+[ext_resource type="Script" uid="uid://5sxnj8qgkckp" path="res://Scenes/piza_3.gd" id="53_sua30"]
+[ext_resource type="Script" uid="uid://diujpbcc1wftn" path="res://Scenes/piza_4.gd" id="54_4k46j"]
+[ext_resource type="Script" uid="uid://dmnkvwnpfgwqv" path="res://Scenes/pep_2.gd" id="54_bxirh"]
+[ext_resource type="Texture2D" uid="uid://ce1yp2e37gpv7" path="res://Assets/Chef assets/cpiz.png" id="54_xp21r"]
+[ext_resource type="Script" uid="uid://2ktv4t7fenns" path="res://Scenes/sus_2.gd" id="55_bxirh"]
+[ext_resource type="Texture2D" uid="uid://dmgpxgyrdl7ci" path="res://Assets/Chef assets/ocpiz.png" id="55_xc4nf"]
+[ext_resource type="Script" uid="uid://1ikknjhwn456" path="res://Scenes/gep_2.gd" id="56_4kcmw"]
+[ext_resource type="Script" uid="uid://bhs1s27audfjp" path="res://Scenes/piz_1.gd" id="56_psc0i"]
+[ext_resource type="Script" uid="uid://baj5msr3w3j3y" path="res://Scenes/piz_2.gd" id="57_0n2qu"]
+[ext_resource type="Script" uid="uid://cd16xbw314cyc" path="res://Scenes/pin_2.gd" id="57_da6c2"]
+[ext_resource type="Script" uid="uid://btikn2aywyl1y" path="res://Scenes/mus_2.gd" id="58_2syee"]
+[ext_resource type="Script" uid="uid://cdv3a34hdmxig" path="res://Scenes/piz_3.gd" id="58_24pn0"]
+[ext_resource type="Script" uid="uid://cm7wkchp8e1xy" path="res://Scenes/piz_4.gd" id="59_7bg3l"]
+[ext_resource type="Script" uid="uid://37h3nvowugdo" path="res://Scenes/bol_3.gd" id="60_girq1"]
+[ext_resource type="Script" uid="uid://bol4fby3js2ml" path="res://Scenes/pep_3.gd" id="61_8o2r6"]
+[ext_resource type="Script" uid="uid://b8nfit4vkhtnx" path="res://Scenes/sus_3.gd" id="62_dqux5"]
+[ext_resource type="Script" uid="uid://6hlciny25u7o" path="res://Scenes/gep_3.gd" id="63_0jbww"]
+[ext_resource type="Script" uid="uid://lebbgblc2p3f" path="res://Scenes/pin_3.gd" id="64_01ew1"]
+[ext_resource type="Script" uid="uid://ve1xd3to23pb" path="res://Scenes/mus_3.gd" id="65_fuhdd"]
+[ext_resource type="Script" uid="uid://cjev60cyq378i" path="res://Scenes/bol_4.gd" id="67_f3mnh"]
+[ext_resource type="Script" uid="uid://cyqtgsfdnxher" path="res://Scenes/pep_4.gd" id="68_rpolq"]
+[ext_resource type="Script" uid="uid://crlpwitt1n2h" path="res://Scenes/sus_4.gd" id="69_dwet5"]
+[ext_resource type="Script" uid="uid://crnosum1frrek" path="res://Scenes/gep_4.gd" id="70_5nxqq"]
+[ext_resource type="Script" uid="uid://sjlf1btj14pk" path="res://Scenes/pin_4.gd" id="71_3ecwy"]
+[ext_resource type="Script" uid="uid://cn4be07j2kc3s" path="res://Scenes/mus_4.gd" id="72_agrce"]
+[ext_resource type="Texture2D" uid="uid://c37gya08x1ai" path="res://Assets/Chef assets/buns.png" id="73_dwet5"]
+[ext_resource type="Texture2D" uid="uid://bk46kh7mxa6ng" path="res://Assets/Chef assets/burg.png" id="74_5nxqq"]
+[ext_resource type="Script" uid="uid://dtnsarv1kqd2e" path="res://Scenes/burg_1.gd" id="75_5nxqq"]
+[ext_resource type="Script" uid="uid://cjih3mny81p2j" path="res://Scenes/topa.gd" id="76_sbs3h"]
+[ext_resource type="Script" uid="uid://pfx6qg0x6brc" path="res://Scenes/topb.gd" id="77_0xh5u"]
+[ext_resource type="Script" uid="uid://cbqs03nff01p5" path="res://Scenes/topc.gd" id="78_7afp3"]
+[ext_resource type="Script" uid="uid://0cl42f65gyxq" path="res://Scenes/topd.gd" id="79_aq5gs"]
+[ext_resource type="Script" uid="uid://bjijdio2ogyir" path="res://Scenes/burg_2.gd" id="80_aq5gs"]
+[ext_resource type="Script" uid="uid://bicl2wecuunj4" path="res://Scenes/topa_2.gd" id="81_ecafy"]
+[ext_resource type="Script" uid="uid://bolcevrq54tep" path="res://Scenes/burg_3.gd" id="81_ks5p1"]
+[ext_resource type="Script" uid="uid://c10kb6sasah7j" path="res://Scenes/burg_4.gd" id="82_dmxnd"]
+[ext_resource type="Script" uid="uid://cwaujcy340hpe" path="res://Scenes/topb_2.gd" id="82_hybty"]
+[ext_resource type="Script" uid="uid://sect33gcof1v" path="res://Scenes/topc_2.gd" id="83_y32nn"]
+[ext_resource type="Script" uid="uid://g2ufo77vce0u" path="res://Scenes/topd_2.gd" id="84_jnyop"]
+[ext_resource type="Script" uid="uid://u1lhkxxmuyjv" path="res://Scenes/topa_3.gd" id="86_w8q4j"]
+[ext_resource type="Script" uid="uid://uf7t6c7trtyx" path="res://Scenes/topb_3.gd" id="87_8issq"]
+[ext_resource type="Script" uid="uid://dx8pft54vbeb7" path="res://Scenes/topc_3.gd" id="88_xpls2"]
+[ext_resource type="Script" uid="uid://o6h77lnnp5m7" path="res://Scenes/topd_3.gd" id="89_b0u7m"]
+[ext_resource type="Script" uid="uid://ccm8s8cmtr081" path="res://Scenes/topa_4.gd" id="91_b58u2"]
+[ext_resource type="Script" uid="uid://bdkvlgpuf731r" path="res://Scenes/topb_4.gd" id="92_8vbli"]
+[ext_resource type="Script" uid="uid://blw3j8mxnodme" path="res://Scenes/topc_4.gd" id="93_8v30c"]
+[ext_resource type="Script" uid="uid://b1v8s0ncvvtwy" path="res://Scenes/topd_4.gd" id="94_lfjg4"]
+[ext_resource type="Texture2D" uid="uid://dbr6n4itianho" path="res://Assets/Chef assets/truenoodp.png" id="96_lfjg4"]
+[ext_resource type="Texture2D" uid="uid://cimr12vk2oypd" path="res://Assets/Chef assets/plate.png" id="97_8v30c"]
+[ext_resource type="Script" uid="uid://c7tw8rjtc4xh8" path="res://Scenes/nood_1.gd" id="97_aj7p7"]
+[ext_resource type="Texture2D" uid="uid://npt7mo0nyria" path="res://Assets/Chef assets/truenoodr.png" id="97_m68ah"]
+[ext_resource type="Texture2D" uid="uid://b5d6yl0spov67" path="res://Assets/Chef assets/truenoodw.png" id="98_48ssv"]
+[ext_resource type="Script" uid="uid://b02fx31t0tqlm" path="res://Scenes/plate.gd" id="98_lfjg4"]
+[ext_resource type="Script" uid="uid://73vs8sof4o8q" path="res://Scenes/nood_2.gd" id="100_pj7c5"]
+[ext_resource type="Script" uid="uid://fn6lshpai0va" path="res://Scenes/nood_3.gd" id="101_8ci63"]
+[ext_resource type="Script" uid="uid://clsmgv54g73ja" path="res://Scenes/nood_4.gd" id="102_t26tf"]
+[ext_resource type="Texture2D" uid="uid://bpk3gwo8cmnlr" path="res://Assets/Chef assets/ucnod.png" id="120_qmcsj"]
+[ext_resource type="Texture2D" uid="uid://m0uwnidghm57" path="res://Assets/Chef assets/cnod.png" id="121_dm2lb"]
+[ext_resource type="Texture2D" uid="uid://c5v2r5xid5jdy" path="res://Assets/Chef assets/ocnod.png" id="122_k1vvp"]
+[ext_resource type="Script" uid="uid://bptuquanpld8n" path="res://Scenes/pot_1.gd" id="123_q3ysh"]
+[ext_resource type="Script" uid="uid://cpcen2icpgdj0" path="res://Scenes/pot_2.gd" id="124_q3ysh"]
+[ext_resource type="Script" uid="uid://uhjacflpdui" path="res://Scenes/pot_3.gd" id="125_arv3c"]
+[ext_resource type="Script" uid="uid://b4lagprlylqj3" path="res://Scenes/pot_4.gd" id="126_m68ah"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1qq7p"]
 size = Vector2(1904, 20)
@@ -128,13 +205,67 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8rk4b"]
-size = Vector2(230, 25.5)
+size = Vector2(243, 25.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j8ub6"]
-size = Vector2(360, 23)
+size = Vector2(390, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2syee"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_b6yl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_lkadl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_wcume")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_unffl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3ecwy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("73_dwet5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_5nxqq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aj7p7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("97_8v30c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_lfjg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_m68ah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_48ssv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ybsrn"]
-size = Vector2(208, 21)
+size = Vector2(196, 21)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s1bym"]
 size = Vector2(109, 22)
@@ -146,22 +277,47 @@ size = Vector2(182, 122.5)
 size = Vector2(125, 43)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wtkrp"]
-size = Vector2(127.5, 63)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xyy7s"]
-size = Vector2(31.5, 48)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuu6k"]
-size = Vector2(140, 60)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_td1iv"]
-size = Vector2(30.5, 43.5)
+size = Vector2(325.5, 230)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o7sdc"]
 size = Vector2(315, 228)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_5omgx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("53_b10uq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_xp21r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_xc4nf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o6kw2"]
 size = Vector2(315.5, 215.25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_arv3c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("120_qmcsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_dm2lb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_k1vvp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_50q82"]
 size = Vector2(718, 32.5)
@@ -230,11 +386,11 @@ text = "exit"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=695404142]
 scale = Vector2(10, 10.000001)
-texture = ExtResource("9_aoin3")
+texture = ExtResource("9_b10uq")
 
 [node name="Cheffella" parent="." unique_id=1389223012 instance=ExtResource("3_lhr4j")]
 z_index = 2
-position = Vector2(-898, -324.00003)
+position = Vector2(-900.9999, -324)
 scale = Vector2(5.735, 5.735)
 script = ExtResource("4_d5sjy")
 
@@ -259,7 +415,7 @@ offset_top = 420.0
 offset_right = -451.0
 offset_bottom = 523.0
 theme_override_fonts/font = ExtResource("7_d5sjy")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 25
 text = "In inventory:
 "
 script = ExtResource("7_i0pns")
@@ -400,14 +556,14 @@ script = ExtResource("30_lxt0n")
 script = ExtResource("5_rjejb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="cabinetarea" unique_id=396526863]
-position = Vector2(-327, -455.75)
+position = Vector2(-320.5, -455.75)
 shape = SubResource("RectangleShape2D_8rk4b")
 
 [node name="cabinetbox" type="ColorRect" parent="cabinetarea/CollisionShape2D" unique_id=548336555]
 visible = false
 offset_left = -143.0
 offset_top = -53.25
-offset_right = 147.0
+offset_right = 180.5
 offset_bottom = 6.75
 color = Color(1, 1, 1, 0.3529412)
 script = ExtResource("6_ns07t")
@@ -416,23 +572,371 @@ script = ExtResource("6_ns07t")
 script = ExtResource("13_ybsrn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="assemblyarea" unique_id=1004323901]
-position = Vector2(69, -456.5)
+position = Vector2(84, -456.5)
 shape = SubResource("RectangleShape2D_j8ub6")
 
 [node name="assemblybox" type="ColorRect" parent="assemblyarea/CollisionShape2D" unique_id=1196541099]
 visible = false
-offset_left = -170.0
+offset_left = -215.0
 offset_top = -54.5
-offset_right = 162.0
+offset_right = 216.0
 offset_bottom = 6.5
 color = Color(1, 1, 1, 0.3529412)
 script = ExtResource("14_s1bym")
+
+[node name="piza1" type="AnimatedSprite2D" parent="assemblyarea" unique_id=2088357915]
+visible = false
+position = Vector2(-79.75, -479.5)
+scale = Vector2(8.85, 7.3749976)
+sprite_frames = SubResource("SpriteFrames_2syee")
+frame = 2
+frame_progress = 0.3746363
+script = ExtResource("39_b6yl8")
+
+[node name="bol" type="Sprite2D" parent="assemblyarea/piza1" unique_id=390115267]
+visible = false
+texture = ExtResource("39_74i15")
+script = ExtResource("41_lkadl")
+
+[node name="pep" type="Sprite2D" parent="assemblyarea/piza1" unique_id=14487659]
+visible = false
+texture = ExtResource("40_sua30")
+script = ExtResource("43_wcume")
+
+[node name="sus" type="Sprite2D" parent="assemblyarea/piza1" unique_id=1636726641]
+visible = false
+texture = ExtResource("41_4k46j")
+script = ExtResource("45_74i15")
+
+[node name="gep" type="Sprite2D" parent="assemblyarea/piza1" unique_id=59188950]
+visible = false
+texture = ExtResource("42_bxirh")
+script = ExtResource("47_sua30")
+
+[node name="pin" type="Sprite2D" parent="assemblyarea/piza1" unique_id=805619715]
+visible = false
+texture = ExtResource("43_4kcmw")
+script = ExtResource("49_bxirh")
+
+[node name="mus" type="Sprite2D" parent="assemblyarea/piza1" unique_id=162182225]
+visible = false
+texture = ExtResource("44_da6c2")
+script = ExtResource("51_4kcmw")
+
+[node name="piza2" type="AnimatedSprite2D" parent="assemblyarea" unique_id=1858259907]
+visible = false
+position = Vector2(30, -479.99997)
+scale = Vector2(8.85, 7.3749976)
+sprite_frames = SubResource("SpriteFrames_2syee")
+frame = 2
+frame_progress = 0.3746363
+script = ExtResource("52_74i15")
+
+[node name="bol2" type="Sprite2D" parent="assemblyarea/piza2" unique_id=882266278]
+visible = false
+texture = ExtResource("39_74i15")
+script = ExtResource("53_4k46j")
+
+[node name="pep2" type="Sprite2D" parent="assemblyarea/piza2" unique_id=1956030258]
+visible = false
+texture = ExtResource("40_sua30")
+script = ExtResource("54_bxirh")
+
+[node name="sus2" type="Sprite2D" parent="assemblyarea/piza2" unique_id=1958065258]
+visible = false
+texture = ExtResource("41_4k46j")
+script = ExtResource("55_bxirh")
+
+[node name="gep2" type="Sprite2D" parent="assemblyarea/piza2" unique_id=1413457372]
+visible = false
+texture = ExtResource("42_bxirh")
+script = ExtResource("56_4kcmw")
+
+[node name="pin2" type="Sprite2D" parent="assemblyarea/piza2" unique_id=258806979]
+visible = false
+texture = ExtResource("43_4kcmw")
+script = ExtResource("57_da6c2")
+
+[node name="mus2" type="Sprite2D" parent="assemblyarea/piza2" unique_id=142921765]
+visible = false
+texture = ExtResource("44_da6c2")
+script = ExtResource("58_2syee")
+
+[node name="piza3" type="AnimatedSprite2D" parent="assemblyarea" unique_id=1085148117]
+visible = false
+position = Vector2(139, -480)
+scale = Vector2(8.85, 7.3749976)
+sprite_frames = SubResource("SpriteFrames_2syee")
+frame = 2
+frame_progress = 0.3746363
+script = ExtResource("53_sua30")
+
+[node name="bol3" type="Sprite2D" parent="assemblyarea/piza3" unique_id=1140768082]
+visible = false
+texture = ExtResource("39_74i15")
+script = ExtResource("60_girq1")
+
+[node name="pep3" type="Sprite2D" parent="assemblyarea/piza3" unique_id=1888341156]
+visible = false
+texture = ExtResource("40_sua30")
+script = ExtResource("61_8o2r6")
+
+[node name="sus3" type="Sprite2D" parent="assemblyarea/piza3" unique_id=2107325935]
+visible = false
+texture = ExtResource("41_4k46j")
+script = ExtResource("62_dqux5")
+
+[node name="gep3" type="Sprite2D" parent="assemblyarea/piza3" unique_id=537072856]
+visible = false
+texture = ExtResource("42_bxirh")
+script = ExtResource("63_0jbww")
+
+[node name="pin3" type="Sprite2D" parent="assemblyarea/piza3" unique_id=1996747522]
+visible = false
+texture = ExtResource("43_4kcmw")
+script = ExtResource("64_01ew1")
+
+[node name="mus3" type="Sprite2D" parent="assemblyarea/piza3" unique_id=574803414]
+visible = false
+texture = ExtResource("44_da6c2")
+script = ExtResource("65_fuhdd")
+
+[node name="piza4" type="AnimatedSprite2D" parent="assemblyarea" unique_id=1853026434]
+visible = false
+position = Vector2(252, -480.00003)
+scale = Vector2(8.85, 7.3749976)
+sprite_frames = SubResource("SpriteFrames_2syee")
+frame = 2
+frame_progress = 0.3746363
+script = ExtResource("54_4k46j")
+
+[node name="bol4" type="Sprite2D" parent="assemblyarea/piza4" unique_id=1663325309]
+visible = false
+texture = ExtResource("39_74i15")
+script = ExtResource("67_f3mnh")
+
+[node name="pep4" type="Sprite2D" parent="assemblyarea/piza4" unique_id=2120406526]
+visible = false
+texture = ExtResource("40_sua30")
+script = ExtResource("68_rpolq")
+
+[node name="sus4" type="Sprite2D" parent="assemblyarea/piza4" unique_id=1235607823]
+visible = false
+texture = ExtResource("41_4k46j")
+script = ExtResource("69_dwet5")
+
+[node name="gep4" type="Sprite2D" parent="assemblyarea/piza4" unique_id=1163314254]
+visible = false
+texture = ExtResource("42_bxirh")
+script = ExtResource("70_5nxqq")
+
+[node name="pin4" type="Sprite2D" parent="assemblyarea/piza4" unique_id=52610107]
+visible = false
+texture = ExtResource("43_4kcmw")
+script = ExtResource("71_3ecwy")
+
+[node name="mus4" type="Sprite2D" parent="assemblyarea/piza4" unique_id=1174687219]
+visible = false
+texture = ExtResource("44_da6c2")
+script = ExtResource("72_agrce")
+
+[node name="burg1" type="AnimatedSprite2D" parent="assemblyarea" unique_id=1454649347]
+visible = false
+position = Vector2(-83.99999, -482.99997)
+scale = Vector2(7.1999993, 7.374999)
+sprite_frames = SubResource("SpriteFrames_3ecwy")
+frame = 1
+frame_progress = 0.37210256
+script = ExtResource("75_5nxqq")
+
+[node name="topa" type="ColorRect" parent="assemblyarea/burg1" unique_id=462706419]
+visible = false
+offset_left = 1.2499996
+offset_top = 1.8983033
+offset_right = 4.1666665
+offset_bottom = 2.440677
+script = ExtResource("76_sbs3h")
+
+[node name="topb" type="ColorRect" parent="assemblyarea/burg1" unique_id=498691149]
+visible = false
+offset_left = 1.1111097
+offset_top = 1.0847436
+offset_right = 4.0277767
+offset_bottom = 2.0339012
+script = ExtResource("77_0xh5u")
+
+[node name="topc" type="ColorRect" parent="assemblyarea/burg1" unique_id=491311784]
+visible = false
+offset_left = -4.166669
+offset_top = 2.3050828
+offset_right = -1.2500019
+offset_bottom = 3.2542405
+script = ExtResource("78_7afp3")
+
+[node name="topd" type="ColorRect" parent="assemblyarea/burg1" unique_id=2127857363]
+visible = false
+offset_left = -4.166669
+offset_top = 1.35593
+offset_right = -1.2500019
+offset_bottom = 2.3050876
+script = ExtResource("79_aq5gs")
+
+[node name="burg2" type="AnimatedSprite2D" parent="assemblyarea" unique_id=324780406]
+visible = false
+position = Vector2(32.000023, -481)
+scale = Vector2(7.1999993, 7.374999)
+sprite_frames = SubResource("SpriteFrames_3ecwy")
+frame = 1
+frame_progress = 0.37210256
+script = ExtResource("80_aq5gs")
+
+[node name="topa2" type="ColorRect" parent="assemblyarea/burg2" unique_id=311248278]
+visible = false
+offset_left = 1.2499996
+offset_top = 1.8983033
+offset_right = 4.1666665
+offset_bottom = 2.440677
+script = ExtResource("81_ecafy")
+
+[node name="topb2" type="ColorRect" parent="assemblyarea/burg2" unique_id=1837048544]
+visible = false
+offset_left = 1.1111097
+offset_top = 1.0847436
+offset_right = 4.0277767
+offset_bottom = 2.0339012
+script = ExtResource("82_hybty")
+
+[node name="topc2" type="ColorRect" parent="assemblyarea/burg2" unique_id=1859495285]
+visible = false
+offset_left = -4.166669
+offset_top = 2.3050828
+offset_right = -1.2500019
+offset_bottom = 3.2542405
+script = ExtResource("83_y32nn")
+
+[node name="topd2" type="ColorRect" parent="assemblyarea/burg2" unique_id=1487133482]
+visible = false
+offset_left = -4.166669
+offset_top = 1.35593
+offset_right = -1.2500019
+offset_bottom = 2.3050876
+script = ExtResource("84_jnyop")
+
+[node name="burg3" type="AnimatedSprite2D" parent="assemblyarea" unique_id=1272472916]
+visible = false
+position = Vector2(139.00003, -480)
+scale = Vector2(7.1999993, 7.374999)
+sprite_frames = SubResource("SpriteFrames_3ecwy")
+frame = 1
+frame_progress = 0.37210256
+script = ExtResource("81_ks5p1")
+
+[node name="topa3" type="ColorRect" parent="assemblyarea/burg3" unique_id=859082100]
+visible = false
+offset_left = 1.2499996
+offset_top = 1.8983033
+offset_right = 4.1666665
+offset_bottom = 2.440677
+script = ExtResource("86_w8q4j")
+
+[node name="topb3" type="ColorRect" parent="assemblyarea/burg3" unique_id=1450172442]
+visible = false
+offset_left = 1.1111097
+offset_top = 1.0847436
+offset_right = 4.0277767
+offset_bottom = 2.0339012
+script = ExtResource("87_8issq")
+
+[node name="topc3" type="ColorRect" parent="assemblyarea/burg3" unique_id=389020438]
+visible = false
+offset_left = -4.166669
+offset_top = 2.3050828
+offset_right = -1.2500019
+offset_bottom = 3.2542405
+script = ExtResource("88_xpls2")
+
+[node name="topd3" type="ColorRect" parent="assemblyarea/burg3" unique_id=1638551892]
+visible = false
+offset_left = -4.166669
+offset_top = 1.35593
+offset_right = -1.2500019
+offset_bottom = 2.3050876
+script = ExtResource("89_b0u7m")
+
+[node name="burg4" type="AnimatedSprite2D" parent="assemblyarea" unique_id=818612304]
+visible = false
+position = Vector2(254.00003, -481)
+scale = Vector2(7.1999993, 7.374999)
+sprite_frames = SubResource("SpriteFrames_3ecwy")
+frame = 1
+frame_progress = 0.37210256
+script = ExtResource("82_dmxnd")
+
+[node name="topa4" type="ColorRect" parent="assemblyarea/burg4" unique_id=1495552355]
+visible = false
+offset_left = 1.2499996
+offset_top = 1.8983033
+offset_right = 4.1666665
+offset_bottom = 2.440677
+script = ExtResource("91_b58u2")
+
+[node name="topb4" type="ColorRect" parent="assemblyarea/burg4" unique_id=242240456]
+visible = false
+offset_left = 1.1111097
+offset_top = 1.0847436
+offset_right = 4.0277767
+offset_bottom = 2.0339012
+script = ExtResource("92_8vbli")
+
+[node name="topc4" type="ColorRect" parent="assemblyarea/burg4" unique_id=506027176]
+visible = false
+offset_left = -4.166669
+offset_top = 2.3050828
+offset_right = -1.2500019
+offset_bottom = 3.2542405
+script = ExtResource("93_8v30c")
+
+[node name="topd4" type="ColorRect" parent="assemblyarea/burg4" unique_id=451662533]
+visible = false
+offset_left = -4.166669
+offset_top = 1.35593
+offset_right = -1.2500019
+offset_bottom = 2.3050876
+script = ExtResource("94_lfjg4")
+
+[node name="nood1" type="AnimatedSprite2D" parent="assemblyarea" unique_id=171141813]
+visible = false
+position = Vector2(-82, -480)
+scale = Vector2(11.089289, 10.874996)
+sprite_frames = SubResource("SpriteFrames_aj7p7")
+script = ExtResource("97_aj7p7")
+
+[node name="nood2" type="AnimatedSprite2D" parent="assemblyarea" unique_id=850969821]
+visible = false
+position = Vector2(31.999985, -480.00003)
+scale = Vector2(11.089289, 10.874996)
+sprite_frames = SubResource("SpriteFrames_aj7p7")
+script = ExtResource("100_pj7c5")
+
+[node name="nood3" type="AnimatedSprite2D" parent="assemblyarea" unique_id=1120121094]
+visible = false
+position = Vector2(138.99998, -481.00003)
+scale = Vector2(11.089289, 10.874996)
+sprite_frames = SubResource("SpriteFrames_aj7p7")
+script = ExtResource("101_8ci63")
+
+[node name="nood4" type="AnimatedSprite2D" parent="assemblyarea" unique_id=821191575]
+visible = false
+position = Vector2(249.99997, -481.00003)
+scale = Vector2(11.089289, 10.874996)
+sprite_frames = SubResource("SpriteFrames_aj7p7")
+script = ExtResource("102_t26tf")
 
 [node name="sinkarea" type="Area2D" parent="." unique_id=405203004]
 script = ExtResource("15_y2t6b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sinkarea" unique_id=1275981757]
-position = Vector2(441, -457.5)
+position = Vector2(447, -457.5)
 shape = SubResource("RectangleShape2D_ybsrn")
 
 [node name="sinkbox" type="ColorRect" parent="sinkarea/CollisionShape2D" unique_id=791425071]
@@ -443,6 +947,13 @@ offset_right = 150.0
 offset_bottom = 7.5
 color = Color(1, 1, 1, 0.3529412)
 script = ExtResource("16_wtkrp")
+
+[node name="plate" type="Sprite2D" parent="sinkarea" unique_id=595470415]
+visible = false
+position = Vector2(415.25, -480.00003)
+scale = Vector2(12.78571, 10.000005)
+texture = ExtResource("97_8v30c")
+script = ExtResource("98_lfjg4")
 
 [node name="trasharea" type="Area2D" parent="." unique_id=1061844435]
 script = ExtResource("17_xyy7s")
@@ -496,65 +1007,17 @@ script = ExtResource("20_o7sdc")
 script = ExtResource("21_o6kw2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="burboxarea" unique_id=491125343]
-position = Vector2(645.75, -298.5)
+position = Vector2(546.75, -215)
 shape = SubResource("RectangleShape2D_wtkrp")
 
 [node name="burboxbox" type="ColorRect" parent="burboxarea/CollisionShape2D" unique_id=1238566077]
 visible = false
-offset_left = -84.75
-offset_top = 8.5
-offset_right = 13.25
-offset_bottom = 68.5
+offset_left = -125.75
+offset_top = -77.0
+offset_right = 115.25
+offset_bottom = 83.0
 color = Color(1, 1, 1, 0.3529412)
 script = ExtResource("22_50q82")
-
-[node name="fryboxarea" type="Area2D" parent="." unique_id=1877723368]
-script = ExtResource("23_psavi")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="fryboxarea" unique_id=1827049453]
-position = Vector2(691.25, -120)
-shape = SubResource("RectangleShape2D_xyy7s")
-
-[node name="fryboxbox" type="ColorRect" parent="fryboxarea/CollisionShape2D" unique_id=771541022]
-visible = false
-offset_left = -130.25
-offset_top = -89.0
-offset_right = -30.25
-offset_bottom = -30.0
-color = Color(1, 1, 1, 0.3529412)
-script = ExtResource("24_orc43")
-
-[node name="pizboxarea" type="Area2D" parent="." unique_id=1586861633]
-script = ExtResource("25_jvc0u")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="pizboxarea" unique_id=465923281]
-position = Vector2(440, -299)
-shape = SubResource("RectangleShape2D_nuu6k")
-
-[node name="pizboxbox" type="ColorRect" parent="pizboxarea/CollisionShape2D" unique_id=1566669848]
-visible = false
-offset_left = -19.0
-offset_top = 9.0
-offset_right = 80.0
-offset_bottom = 69.0
-color = Color(1, 1, 1, 0.3529412)
-script = ExtResource("26_fgjqp")
-
-[node name="noodboxarea" type="Area2D" parent="." unique_id=1875724439]
-script = ExtResource("27_hb5c8")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="noodboxarea" unique_id=1860168143]
-position = Vector2(385.25, -119.25)
-shape = SubResource("RectangleShape2D_td1iv")
-
-[node name="noodboxbox" type="ColorRect" parent="noodboxarea/CollisionShape2D" unique_id=1125426336]
-visible = false
-offset_left = 35.75
-offset_top = -90.75
-offset_right = 133.75
-offset_bottom = -29.75
-color = Color(1, 1, 1, 0.3529412)
-script = ExtResource("28_grtg1")
 
 [node name="ovenarea" type="Area2D" parent="." unique_id=1066477493]
 script = ExtResource("29_6hoiv")
@@ -572,6 +1035,34 @@ offset_bottom = 79.0
 color = Color(1, 1, 1, 0.3529412)
 script = ExtResource("30_2cbih")
 
+[node name="piz1" type="AnimatedSprite2D" parent="ovenarea" unique_id=318511179]
+visible = false
+position = Vector2(-50, -260)
+scale = Vector2(9.999999, 9.958334)
+sprite_frames = SubResource("SpriteFrames_5omgx")
+script = ExtResource("56_psc0i")
+
+[node name="piz2" type="AnimatedSprite2D" parent="ovenarea" unique_id=1259904490]
+visible = false
+position = Vector2(90, -260)
+scale = Vector2(9.999999, 9.958334)
+sprite_frames = SubResource("SpriteFrames_5omgx")
+script = ExtResource("57_0n2qu")
+
+[node name="piz3" type="AnimatedSprite2D" parent="ovenarea" unique_id=223170667]
+visible = false
+position = Vector2(-50, -170)
+scale = Vector2(9.999999, 9.958334)
+sprite_frames = SubResource("SpriteFrames_5omgx")
+script = ExtResource("58_24pn0")
+
+[node name="piz4" type="AnimatedSprite2D" parent="ovenarea" unique_id=68592040]
+visible = false
+position = Vector2(90, -170)
+scale = Vector2(9.999999, 9.958334)
+sprite_frames = SubResource("SpriteFrames_5omgx")
+script = ExtResource("59_7bg3l")
+
 [node name="potsarea" type="Area2D" parent="." unique_id=121437163]
 script = ExtResource("31_gcae5")
 
@@ -587,6 +1078,34 @@ offset_right = 122.75
 offset_bottom = 66.375
 color = Color(1, 1, 1, 0.3529412)
 script = ExtResource("32_4ygwj")
+
+[node name="pot1" type="AnimatedSprite2D" parent="potsarea" unique_id=410348276]
+visible = false
+position = Vector2(-570, -272.00003)
+scale = Vector2(9.000002, 8.875)
+sprite_frames = SubResource("SpriteFrames_arv3c")
+script = ExtResource("123_q3ysh")
+
+[node name="pot2" type="AnimatedSprite2D" parent="potsarea" unique_id=184589845]
+visible = false
+position = Vector2(-429.00003, -271)
+scale = Vector2(8.875, 9.125004)
+sprite_frames = SubResource("SpriteFrames_arv3c")
+script = ExtResource("124_q3ysh")
+
+[node name="pot3" type="AnimatedSprite2D" parent="potsarea" unique_id=449766372]
+visible = false
+position = Vector2(-570.25, -196)
+scale = Vector2(9.208335, 9.249996)
+sprite_frames = SubResource("SpriteFrames_arv3c")
+script = ExtResource("125_arv3c")
+
+[node name="pot4" type="AnimatedSprite2D" parent="potsarea" unique_id=1396656336]
+visible = false
+position = Vector2(-428.99997, -194)
+scale = Vector2(9.25, 9.5)
+sprite_frames = SubResource("SpriteFrames_arv3c")
+script = ExtResource("126_m68ah")
 
 [node name="regarea" type="Area2D" parent="." unique_id=295899502]
 script = ExtResource("33_mm3hm")
@@ -695,15 +1214,59 @@ scale = Vector2(3, 3)
 [connection signal="triggercolor" from="fryerarea" to="fryerarea/CollisionShape2D/fryerbox" method="_on_fryerarea_triggercolor"]
 [connection signal="action" from="cabinetarea" to="." method="_on_cabinetarea_action"]
 [connection signal="action" from="cabinetarea" to="ChefCabinet" method="_on_cabinetarea_action"]
+[connection signal="action" from="cabinetarea" to="Cheffella" method="_on_cabinetarea_action"]
 [connection signal="body_entered" from="cabinetarea" to="cabinetarea" method="_on_body_entered"]
 [connection signal="body_exited" from="cabinetarea" to="cabinetarea" method="_on_body_exited"]
 [connection signal="invfull" from="cabinetarea" to="alertbox" method="_on_cabinetarea_invfull"]
 [connection signal="triggercolor" from="cabinetarea" to="cabinetarea/CollisionShape2D/cabinetbox" method="_on_cabinetarea_triggercolor"]
+[connection signal="bad" from="assemblyarea" to="alertbox" method="_on_assemblyarea_bad"]
 [connection signal="body_entered" from="assemblyarea" to="assemblyarea" method="_on_body_entered"]
 [connection signal="body_exited" from="assemblyarea" to="assemblyarea" method="_on_body_exited"]
+[connection signal="firstburg" from="assemblyarea" to="assemblyarea/burg1" method="_on_assemblyarea_firstburg"]
+[connection signal="firstnood" from="assemblyarea" to="assemblyarea/nood1" method="_on_assemblyarea_firstnood"]
+[connection signal="firstpizza" from="assemblyarea" to="assemblyarea/piza1" method="_on_assemblyarea_firstpizza"]
+[connection signal="fourthburg" from="assemblyarea" to="assemblyarea/burg4" method="_on_assemblyarea_fourthburg"]
+[connection signal="fourthnood" from="assemblyarea" to="assemblyarea/nood4" method="_on_assemblyarea_fourthnood"]
+[connection signal="fourthpizza" from="assemblyarea" to="assemblyarea/piza4" method="_on_assemblyarea_fourthpizza"]
+[connection signal="secondburg" from="assemblyarea" to="assemblyarea/burg2" method="_on_assemblyarea_secondburg"]
+[connection signal="secondnood" from="assemblyarea" to="assemblyarea/nood2" method="_on_assemblyarea_secondnood"]
+[connection signal="secondpizza" from="assemblyarea" to="assemblyarea/piza2" method="_on_assemblyarea_secondpizza"]
+[connection signal="thirdburg" from="assemblyarea" to="assemblyarea/burg3" method="_on_assemblyarea_thirdburg"]
+[connection signal="thirdnood" from="assemblyarea" to="assemblyarea/nood3" method="_on_assemblyarea_thirdnood"]
+[connection signal="thirdpizza" from="assemblyarea" to="assemblyarea/piza3" method="_on_assemblyarea_thirdpizza"]
 [connection signal="triggercolor" from="assemblyarea" to="assemblyarea/CollisionShape2D/assemblybox" method="_on_assemblyarea_triggercolor"]
+[connection signal="alron" from="assemblyarea/piza1" to="alertbox" method="_on_piza_1_alron"]
+[connection signal="nope" from="assemblyarea/piza1" to="assemblyarea" method="_on_piza_1_nope"]
+[connection signal="tomuch" from="assemblyarea/piza1" to="alertbox" method="_on_piza_1_tomuch"]
+[connection signal="alron" from="assemblyarea/piza2" to="alertbox" method="_on_piza_2_alron"]
+[connection signal="nope" from="assemblyarea/piza2" to="assemblyarea" method="_on_piza_2_nope"]
+[connection signal="tomuch" from="assemblyarea/piza2" to="alertbox" method="_on_piza_2_tomuch"]
+[connection signal="alron" from="assemblyarea/piza3" to="alertbox" method="_on_piza_3_alron"]
+[connection signal="nope" from="assemblyarea/piza3" to="assemblyarea" method="_on_piza_3_nope"]
+[connection signal="tomuch" from="assemblyarea/piza3" to="alertbox" method="_on_piza_3_tomuch"]
+[connection signal="alron" from="assemblyarea/piza4" to="alertbox" method="_on_piza_4_alron"]
+[connection signal="nope" from="assemblyarea/piza4" to="assemblyarea" method="_on_piza_4_nope"]
+[connection signal="tomuch" from="assemblyarea/piza4" to="alertbox" method="_on_piza_4_tomuch"]
+[connection signal="alron" from="assemblyarea/burg1" to="alertbox" method="_on_burg_1_alron"]
+[connection signal="nope" from="assemblyarea/burg1" to="assemblyarea" method="_on_burg_1_nope"]
+[connection signal="tomuch" from="assemblyarea/burg1" to="alertbox" method="_on_burg_1_tomuch"]
+[connection signal="alron" from="assemblyarea/burg2" to="alertbox" method="_on_burg_2_alron"]
+[connection signal="nope" from="assemblyarea/burg2" to="assemblyarea" method="_on_burg_2_nope"]
+[connection signal="tomuch" from="assemblyarea/burg2" to="alertbox" method="_on_burg_2_tomuch"]
+[connection signal="alron" from="assemblyarea/burg3" to="alertbox" method="_on_burg_3_alron"]
+[connection signal="nope" from="assemblyarea/burg3" to="assemblyarea" method="_on_burg_3_nope"]
+[connection signal="tomuch" from="assemblyarea/burg3" to="alertbox" method="_on_burg_3_tomuch"]
+[connection signal="alron" from="assemblyarea/burg4" to="alertbox" method="_on_burg_4_alron"]
+[connection signal="nope" from="assemblyarea/burg4" to="assemblyarea" method="_on_burg_4_nope"]
+[connection signal="tomuch" from="assemblyarea/burg4" to="alertbox" method="_on_burg_4_tomuch"]
+[connection signal="nope" from="assemblyarea/nood1" to="assemblyarea" method="_on_nood_1_nope"]
+[connection signal="nope" from="assemblyarea/nood2" to="assemblyarea" method="_on_nood_2_nope"]
+[connection signal="nope" from="assemblyarea/nood3" to="assemblyarea" method="_on_nood_3_nope"]
+[connection signal="nope" from="assemblyarea/nood4" to="assemblyarea" method="_on_nood_4_nope"]
+[connection signal="action" from="sinkarea" to="Cheffella" method="_on_sinkarea_action"]
 [connection signal="body_entered" from="sinkarea" to="sinkarea" method="_on_body_entered"]
 [connection signal="body_exited" from="sinkarea" to="sinkarea" method="_on_body_exited"]
+[connection signal="done" from="sinkarea" to="sinkarea/plate" method="_on_sinkarea_done"]
 [connection signal="triggercolor" from="sinkarea" to="sinkarea/CollisionShape2D/sinkbox" method="_on_sinkarea_triggercolor"]
 [connection signal="action" from="trasharea" to="inventorytext" method="_on_trasharea_action"]
 [connection signal="action" from="trasharea" to="alertbox" method="_on_trasharea_action"]
@@ -718,6 +1281,7 @@ scale = Vector2(3, 3)
 [connection signal="focus_exited" from="trash2area/CollisionShape2D2/trashbox2" to="trash2area/CollisionShape2D2/trashbox2" method="_on_focus_exited"]
 [connection signal="action" from="fridgearea" to="." method="_on_fridgearea_action"]
 [connection signal="action" from="fridgearea" to="ChefRefrigerator" method="_on_fridgearea_action"]
+[connection signal="action" from="fridgearea" to="Cheffella" method="_on_fridgearea_action"]
 [connection signal="body_entered" from="fridgearea" to="fridgearea" method="_on_body_entered"]
 [connection signal="body_exited" from="fridgearea" to="fridgearea" method="_on_body_exited"]
 [connection signal="invfull" from="fridgearea" to="alertbox" method="_on_fridgearea_invfull"]
@@ -725,20 +1289,19 @@ scale = Vector2(3, 3)
 [connection signal="body_entered" from="burboxarea" to="burboxarea" method="_on_body_entered"]
 [connection signal="body_exited" from="burboxarea" to="burboxarea" method="_on_body_exited"]
 [connection signal="triggercolor" from="burboxarea" to="burboxarea/CollisionShape2D/burboxbox" method="_on_burboxarea_triggercolor"]
-[connection signal="body_entered" from="fryboxarea" to="fryboxarea" method="_on_body_entered"]
-[connection signal="body_exited" from="fryboxarea" to="fryboxarea" method="_on_body_exited"]
-[connection signal="triggercolor" from="fryboxarea" to="fryboxarea/CollisionShape2D/fryboxbox" method="_on_fryboxarea_triggercolor"]
-[connection signal="body_entered" from="pizboxarea" to="pizboxarea" method="_on_body_entered"]
-[connection signal="body_exited" from="pizboxarea" to="pizboxarea" method="_on_body_exited"]
-[connection signal="triggercolor" from="pizboxarea" to="pizboxarea/CollisionShape2D/pizboxbox" method="_on_pizboxarea_triggercolor"]
-[connection signal="body_entered" from="noodboxarea" to="noodboxarea" method="_on_body_entered"]
-[connection signal="body_exited" from="noodboxarea" to="noodboxarea" method="_on_body_exited"]
-[connection signal="triggercolor" from="noodboxarea" to="noodboxarea/CollisionShape2D/noodboxbox" method="_on_noodboxarea_triggercolor"]
 [connection signal="body_entered" from="ovenarea" to="ovenarea" method="_on_body_entered"]
 [connection signal="body_exited" from="ovenarea" to="ovenarea" method="_on_body_exited"]
+[connection signal="firstinteract" from="ovenarea" to="ovenarea/piz1" method="_on_ovenarea_firstinteract"]
+[connection signal="fourthinteract" from="ovenarea" to="ovenarea/piz4" method="_on_ovenarea_fourthinteract"]
+[connection signal="secondinteract" from="ovenarea" to="ovenarea/piz2" method="_on_ovenarea_secondinteract"]
+[connection signal="thirdinteract" from="ovenarea" to="ovenarea/piz3" method="_on_ovenarea_thirdinteract"]
 [connection signal="triggercolor" from="ovenarea" to="ovenarea/CollisionShape2D/ovenbox" method="_on_ovenarea_triggercolor"]
 [connection signal="body_entered" from="potsarea" to="potsarea" method="_on_body_entered"]
 [connection signal="body_exited" from="potsarea" to="potsarea" method="_on_body_exited"]
+[connection signal="firstinteract" from="potsarea" to="potsarea/pot1" method="_on_potsarea_firstinteract"]
+[connection signal="fourthinteract" from="potsarea" to="potsarea/pot4" method="_on_potsarea_fourthinteract"]
+[connection signal="secondinteract" from="potsarea" to="potsarea/pot2" method="_on_potsarea_secondinteract"]
+[connection signal="thirdinteract" from="potsarea" to="potsarea/pot3" method="_on_potsarea_thirdinteract"]
 [connection signal="triggercolor" from="potsarea" to="potsarea/CollisionShape2D/potsbox" method="_on_potsarea_triggercolor"]
 [connection signal="body_entered" from="regarea" to="regarea" method="_on_body_entered"]
 [connection signal="body_exited" from="regarea" to="regarea" method="_on_body_exited"]

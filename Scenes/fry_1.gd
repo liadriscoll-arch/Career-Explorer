@@ -17,13 +17,13 @@ func _on_fryerarea_firstinteract() -> void:
 	elif visible == true and Chefglobal.inventory == "":
 		if get_frame() == 0:
 			visible = false
-			Chefglobal.inventory = "Uncooked\n" + heldfry
+			Chefglobal.inventory = heldfry
 			heldfry = ""
 		if get_frame() == 1:
 			visible = false
-			Chefglobal.inventory = "Cooked\n" + heldfry
+			Chefglobal.inventory = "Cooked " + heldfry
 			heldfry = ""
 		if get_frame() == 2:
 			visible = false
-			Chefglobal.inventory = "Overcooked\n" + heldfry
+			Chefglobal.inventory = "Overcooked " + heldfry
 			heldfry = ""

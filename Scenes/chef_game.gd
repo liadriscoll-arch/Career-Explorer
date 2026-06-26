@@ -85,5 +85,3 @@ func update_line() -> void:
 		spot3.texture = Chefglobal.customer_line[2]
 	if Chefglobal.customer_line.size() >= 4:
 		spot3.texture = Chefglobal.customer_line[3]
-	if Chefglobal.customer_line.size() >= 4:
-		spot3.texture = Chefglobal.customer_line[4]

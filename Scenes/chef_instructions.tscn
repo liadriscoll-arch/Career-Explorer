@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bggg4x3uw5xda" path="res://Scenes/chef_instructions.gd" id="1_hmatf"]
 [ext_resource type="FontFile" uid="uid://dl176n4kxwrv8" path="res://Assets/04b_30/04B_30__.TTF" id="2_w4hly"]
-[ext_resource type="Texture2D" uid="uid://crs38oemip8a3" path="res://Assets/Chef assets/chefbackground.png" id="2_yseqc"]
+[ext_resource type="Texture2D" uid="uid://rlstm7mlg2d1" path="res://Assets/Chef assets/truechefbackground.png" id="2_yseqc"]
 [ext_resource type="Script" uid="uid://c5mqhwhobjkjk" path="res://Scenes/button.gd" id="4_i7chl"]
 [ext_resource type="Script" uid="uid://2e1exnp2766y" path="res://Scenes/button_2.gd" id="5_b2ggq"]
 [ext_resource type="Script" uid="uid://uxasvuhqdnuc" path="res://Scenes/button_3.gd" id="6_yseqc"]

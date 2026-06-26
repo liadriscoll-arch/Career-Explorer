@@ -2,6 +2,7 @@ extends Area2D
 
 var player_inside := false
 signal action
+signal done
 signal triggercolor
 
 func _ready() -> void:
@@ -22,4 +23,14 @@ func _on_body_exited(body: Node2D) -> void:
 		triggercolor.emit()
 
 func open_menu() -> void:
-	action.emit()
+	if Chefglobal.canmove and !Chefglobal.plate:
+		Chefglobal.canmove = false
+		action.emit()
+		await get_tree().create_timer(1.0).timeout
+		Chefglobal.plate = true
+		done.emit()
+		Chefglobal.canmove = true
+	elif Chefglobal.plate and Chefglobal.inventory == "":
+		Chefglobal.plate = false
+		Chefglobal.inventory = "Plate"
+		done.emit()

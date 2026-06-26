@@ -7,7 +7,7 @@ func _ready() -> void:
 
 func _on_gnood_mouse_entered() -> void:
 	set_text("Long noodle
-	-cooked in a pot for 10 seconds
+	-cooked in a pot for 20 seconds
 	")
 
 func _on_gnood_mouse_exited() -> void:
@@ -16,7 +16,7 @@ func _on_gnood_mouse_exited() -> void:
 
 func _on_rnood_mouse_entered() -> void:
 	set_text("Short noodle
-	-cooked in a pot for 10 seconds
+	-cooked in a pot for 20 seconds
 	")
 
 

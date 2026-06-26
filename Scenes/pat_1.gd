@@ -17,13 +17,13 @@ func _on_pansarea_firstinteract() -> void:
 	elif visible == true and Chefglobal.inventory == "":
 		if get_frame() == 0:
 			visible = false
-			Chefglobal.inventory = "Uncooked\n" + heldpatty
+			Chefglobal.inventory = heldpatty
 			heldpatty = ""
 		if get_frame() == 1:
 			visible = false
-			Chefglobal.inventory = "Cooked\n" + heldpatty
+			Chefglobal.inventory = "Cooked " + heldpatty
 			heldpatty = ""
 		if get_frame() == 2:
 			visible = false
-			Chefglobal.inventory = "Overcooked\n" + heldpatty
+			Chefglobal.inventory = "Overcooked " + heldpatty
 			heldpatty = ""

@@ -44,3 +44,15 @@ func _physics_process(delta: float) -> void:
 func _on_chef_game_openedmenu() -> void:
 	Chefglobal.playerx = position.x
 	Chefglobal.playery = position.y
+
+
+func _on_cabinetarea_action() -> void:
+	fella_sprite.play("interacting")
+
+
+func _on_fridgearea_action() -> void:
+	fella_sprite.play("interacting")
+
+
+func _on_sinkarea_action() -> void:
+	fella_sprite.play("interacting")

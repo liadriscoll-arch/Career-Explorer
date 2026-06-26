@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://deawtqxkjytmi" path="res://Scenes/chef_tutorial.gd" id="1_lw2ff"]
 [ext_resource type="FontFile" uid="uid://dl176n4kxwrv8" path="res://Assets/04b_30/04B_30__.TTF" id="2_230hs"]
-[ext_resource type="Texture2D" uid="uid://crs38oemip8a3" path="res://Assets/Chef assets/chefbackground.png" id="2_lw2ff"]
+[ext_resource type="Texture2D" uid="uid://rlstm7mlg2d1" path="res://Assets/Chef assets/truechefbackground.png" id="2_lw2ff"]
 [ext_resource type="Texture2D" uid="uid://b60gpfnukr0yu" path="res://Assets/Chef assets/chefsettingdonebutton.png" id="3_mewkk"]
 [ext_resource type="Texture2D" uid="uid://dild6d0ulr0bc" path="res://Assets/Chef assets/chefsettingdonebuttonhover.png" id="4_lw2ff"]
 [ext_resource type="Script" uid="uid://7vowvghrhq8r" path="res://Scenes/starttut.gd" id="5_mewkk"]
@@ -143,10 +143,10 @@ theme_override_font_sizes/font_size = 45
 text = "cabinets"
 
 [node name="Label17" type="Label" parent="." unique_id=1975910268]
-offset_left = -90.0
-offset_top = -509.0
-offset_right = 206.0
-offset_bottom = -447.0
+offset_left = -36.0
+offset_top = -504.0
+offset_right = 260.0
+offset_bottom = -442.0
 theme_override_fonts/font = ExtResource("2_230hs")
 theme_override_font_sizes/font_size = 45
 text = "assembly"
@@ -194,10 +194,10 @@ text = "get food
 stuffs"
 
 [node name="Label22" type="Label" parent="." unique_id=1974815212]
-offset_left = -78.0
-offset_top = -461.0
-offset_right = 169.0
-offset_bottom = -396.0
+offset_left = -19.0
+offset_top = -454.0
+offset_right = 249.0
+offset_bottom = -389.0
 theme_override_fonts/font = ExtResource("2_230hs")
 theme_override_font_sizes/font_size = 25
 text = "assemble your
@@ -232,7 +232,7 @@ offset_bottom = -377.0
 theme_override_fonts/font = ExtResource("2_230hs")
 theme_override_font_sizes/font_size = 25
 text = "clean dishes
-for food"
+for noodles"
 
 [node name="Label26" type="Label" parent="." unique_id=366302592]
 offset_left = 582.0
@@ -323,7 +323,7 @@ theme_override_font_sizes/font_size = 25
 text = "-space to interact with noncooking
 appliances
 -1, 2, 3, 4 to put food on cooking
-appliances
+appliances and assembly station
 -food burns after 10 seconds
 -people also want their food on time!
 -make sure to get orders correct for

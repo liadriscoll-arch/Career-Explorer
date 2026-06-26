@@ -1,7 +1,6 @@
 extends Area2D
 
 var player_inside := false
-signal action
 signal triggercolor
 
 func _ready() -> void:
@@ -22,4 +21,5 @@ func _on_body_exited(body: Node2D) -> void:
 		triggercolor.emit()
 
 func open_menu() -> void:
-	action.emit()
+	if Chefglobal.inventory.contains("Cooked") and !Chefglobal.inventory.contains("Boxed"):
+		Chefglobal.inventory = "Boxed " + Chefglobal.inventory
