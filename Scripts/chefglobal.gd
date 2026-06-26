@@ -8,3 +8,4 @@ var day = 1
 var inventory = ""
 var assemblytable = ""
 var canmove = true
+var customer_line: Array[Texture2D] = []

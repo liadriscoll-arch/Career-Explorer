@@ -18,6 +18,8 @@ func _ready():
 	MainGameMusic.play_main_music()
 	volume_slider.value = Global.volume
 	brightness_slider.value = Global.brightness
+	_on_volume_slider_value_changed(volume_slider.value)
+	_on_brightness_slider_value_changed(brightness_slider.value)
 	
 
 
@@ -28,7 +30,8 @@ func _on_brightness_slider_changed() -> void:
 
 func _on_brightness_slider_value_changed(new_value: float) -> void:
 	Global.brightness = new_value
-	$brightness_slider/Brightness_slider_label.text = str(int(new_value)) + "%"
+	Global.apply_brightness()
+	$brightness_slider/Brightness_slider_label.text = str(int(Global.get_brightness_level(new_value) * 100.0)) + "%"
 
 
 func _on_volume_slider_changed() -> void:

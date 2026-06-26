@@ -652,6 +652,30 @@ offset_bottom = 150.0
 color = Color(1, 1, 1, 0.3529412)
 script = ExtResource("40_i0pns")
 
+[node name="customer_timer" type="Timer" parent="." unique_id=1546965706]
+wait_time = 5.0
+autostart = true
+
+[node name="Customer1" type="Sprite2D" parent="." unique_id=1208336779]
+position = Vector2(752.00006, 266.99997)
+scale = Vector2(3, 3)
+
+[node name="Customer2" type="Sprite2D" parent="." unique_id=1574794135]
+position = Vector2(625, 292)
+scale = Vector2(3, 3)
+
+[node name="Customer3" type="Sprite2D" parent="." unique_id=936279081]
+position = Vector2(516, 294)
+scale = Vector2(3, 3)
+
+[node name="Customer4" type="Sprite2D" parent="." unique_id=1585918805]
+position = Vector2(400.00003, 305)
+scale = Vector2(3, 3)
+
+[node name="Customer5" type="Sprite2D" parent="." unique_id=1022304461]
+position = Vector2(288, 303)
+scale = Vector2(3, 3)
+
 [connection signal="openedmenu" from="." to="Cheffella" method="_on_chef_game_openedmenu"]
 [connection signal="pressed" from="ChefCabinet/exit" to="ChefCabinet" method="_on_exit_pressed"]
 [connection signal="pressed" from="ChefCabinet/exit" to="ChefCabinet/exit" method="_on_pressed"]
@@ -728,3 +752,4 @@ script = ExtResource("40_i0pns")
 [connection signal="body_entered" from="orderarea" to="orderarea" method="_on_body_entered"]
 [connection signal="body_exited" from="orderarea" to="orderarea" method="_on_body_exited"]
 [connection signal="triggercolor" from="orderarea" to="orderarea/CollisionShape2D/orderbox" method="_on_orderarea_triggercolor"]
+[connection signal="timeout" from="customer_timer" to="." method="_on_customer_timer_timeout"]

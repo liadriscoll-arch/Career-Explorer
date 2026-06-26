@@ -1,7 +1,7 @@
 extends Node
 
 var volume = 50
-var brightness = 100
+var brightness = 50
 var coffee_complete = false
 var chef_complete = false
 var endless = false
@@ -49,6 +49,26 @@ var espresso_brewing = false
 var previous_scene_path = ""
 var expresso_speed_purchased = false
 var coffee_speed_purchased = false
+var _brightness_scene: Node
+var _last_brightness = -1.0
+
+
+func _process(_delta):
+	if get_tree().current_scene != _brightness_scene or brightness != _last_brightness:
+		apply_brightness()
+
+
+func get_brightness_level(value = brightness) -> float:
+	return lerp(0.5, 1.5, clampf(float(value), 0.0, 100.0) / 100.0)
+
+
+func apply_brightness() -> void:
+	_brightness_scene = get_tree().current_scene
+	_last_brightness = brightness
+	
+	if _brightness_scene is CanvasItem:
+		var brightness_level = get_brightness_level()
+		_brightness_scene.modulate = Color(brightness_level, brightness_level, brightness_level, 1.0)
 
 
 func esc_settings():
