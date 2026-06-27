@@ -1199,6 +1199,10 @@ scale = Vector2(3, 3)
 position = Vector2(400.00003, 305)
 scale = Vector2(3, 3)
 
+[node name="GameTime" type="Timer" parent="." unique_id=968243356]
+wait_time = 600.0
+autostart = true
+
 [connection signal="openedmenu" from="." to="Orderbook" method="_on_chef_game_openedmenu"]
 [connection signal="pressed" from="ChefCabinet/exit" to="ChefCabinet" method="_on_exit_pressed"]
 [connection signal="pressed" from="ChefCabinet/exit" to="ChefCabinet/exit" method="_on_pressed"]
