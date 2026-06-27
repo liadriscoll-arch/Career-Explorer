@@ -25,6 +25,10 @@ func _on_body_exited(body: Node2D) -> void:
 func open_menu() -> void:
 	if Chefglobal.cashier_line.size() > 0:
 		Chefglobal.cashier_line.remove_at(0)
+		Chefglobal.ratings += Chefglobal.totalmoney[0]
+		Chefglobal.totalmoney.remove_at(0)
+		if Chefglobal.ratings >= 500:
+			get_tree().change_scene_to_file("res://Scenes/chef_end.tscn")
 		action.emit()
 	else:
 		none.emit()

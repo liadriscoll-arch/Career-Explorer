@@ -143,6 +143,8 @@
 [ext_resource type="Script" uid="uid://uhjacflpdui" path="res://Scenes/pot_3.gd" id="125_arv3c"]
 [ext_resource type="Script" uid="uid://b4lagprlylqj3" path="res://Scenes/pot_4.gd" id="126_m68ah"]
 [ext_resource type="Script" uid="uid://cb11ry6x3db8v" path="res://Scenes/gametime.gd" id="142_ywwtq"]
+[ext_resource type="Script" uid="uid://dp167a6pcy5fk" path="res://Scenes/ratings.gd" id="144_bykn2"]
+[ext_resource type="Script" uid="uid://d17xoc8nnalmc" path="res://Scenes/day.gd" id="144_om725"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1qq7p"]
 size = Vector2(1904, 20)
@@ -1221,12 +1223,12 @@ wait_time = 600.0
 autostart = true
 
 [node name="gametime" type="Label" parent="." unique_id=624979591]
-offset_left = 685.0
-offset_top = 432.0
-offset_right = 934.0
-offset_bottom = 503.0
+offset_left = 605.0
+offset_top = 417.0
+offset_right = 854.0
+offset_bottom = 488.0
 theme_override_fonts/font = ExtResource("7_d5sjy")
-theme_override_font_sizes/font_size = 34
+theme_override_font_sizes/font_size = 23
 text = "time"
 horizontal_alignment = 1
 script = ExtResource("142_ywwtq")
@@ -1237,6 +1239,28 @@ autostart = true
 
 [node name="Minutes" type="Timer" parent="." unique_id=1536892125]
 autostart = true
+
+[node name="ratings" type="Label" parent="." unique_id=1939848006]
+offset_left = 678.0
+offset_top = 466.0
+offset_right = 927.0
+offset_bottom = 537.0
+theme_override_fonts/font = ExtResource("7_d5sjy")
+theme_override_font_sizes/font_size = 23
+text = "rating"
+horizontal_alignment = 1
+script = ExtResource("144_bykn2")
+
+[node name="day" type="Label" parent="." unique_id=1765064959]
+offset_left = 751.0
+offset_top = 417.0
+offset_right = 1000.0
+offset_bottom = 488.0
+theme_override_fonts/font = ExtResource("7_d5sjy")
+theme_override_font_sizes/font_size = 23
+text = "day"
+horizontal_alignment = 1
+script = ExtResource("144_om725")
 
 [connection signal="openedmenu" from="." to="Orderbook" method="_on_chef_game_openedmenu"]
 [connection signal="pressed" from="ChefCabinet/exit" to="ChefCabinet" method="_on_exit_pressed"]

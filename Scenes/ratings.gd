@@ -2,11 +2,11 @@ extends Label
 
 func _ready() -> void:
 	if Chefglobal.mode == 0:
-		set_visible(false)
-		
+			visible = false
+			
+# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Chefglobal.mode == 1:
-		set_visible(false)
+	text = "Ratings:\n" + str(Chefglobal.ratings/100.0).left(3)
 	if Input.is_action_just_pressed("tutorialopen"):
 		if visible == true:
 			visible = false

@@ -15,8 +15,9 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	
 	set_text("Time:\n")
-	if hours == 13:
+	if hours == 12:
 		pm = true
+	if hours == 13:
 		hours = 1
 	if minutes == 60:
 		minutes = 0

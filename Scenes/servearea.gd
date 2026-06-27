@@ -48,9 +48,7 @@ func open_menu() -> void:
 	for j in Chefglobal.orders.size():
 		if (Chefglobal.orders.get(j).item1 == "" and 
 		Chefglobal.orders.get(j).item2 == "" and Chefglobal.orders.get(j).item3 == ""):
-			Chefglobal.totalmoney += Chefglobal.orders.get(j).money
-			if Chefglobal.totalmoney >= 700:
-				get_tree().change_scene_to_file("res://Scenes/chef_end.tscn")
+			Chefglobal.totalmoney.append(Chefglobal.orders.get(j).money)
 			Chefglobal.servdcust += 1
 			remove = j
 	if remove != -1:
