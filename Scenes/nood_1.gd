@@ -33,7 +33,7 @@ func _on_assemblyarea_firstnood() -> void:
 		isready = true
 	elif isready and Chefglobal.inventory == "":
 		visible = false
-		Chefglobal.inventory= sauce + "\n" + type 
+		Chefglobal.inventory= sauce + " " + type 
 		isready = false
 		sauce = ""
 		Chefglobal.assemblytable1 = ""

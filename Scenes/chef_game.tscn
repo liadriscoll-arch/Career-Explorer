@@ -437,12 +437,13 @@ script = ExtResource("8_rjejb")
 [node name="inventorytext" type="Label" parent="." unique_id=1807861250]
 offset_left = -935.0
 offset_top = 420.0
-offset_right = -451.0
+offset_right = -327.0
 offset_bottom = 523.0
 theme_override_fonts/font = ExtResource("7_d5sjy")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 20
 text = "In inventory:
 "
+autowrap_mode = 2
 script = ExtResource("7_i0pns")
 
 [node name="alertbox" type="Label" parent="." unique_id=2063416349]
@@ -1335,7 +1336,11 @@ scale = Vector2(3, 3)
 [connection signal="body_entered" from="bookarea" to="bookarea" method="_on_body_entered"]
 [connection signal="body_exited" from="bookarea" to="bookarea" method="_on_body_exited"]
 [connection signal="triggercolor" from="bookarea" to="bookarea/CollisionShape2D/bookbox" method="_on_bookarea_triggercolor"]
+[connection signal="action" from="orderarea" to="." method="_on_orderarea_action"]
+[connection signal="action" from="orderarea" to="alertbox" method="_on_orderarea_action"]
 [connection signal="body_entered" from="orderarea" to="orderarea" method="_on_body_entered"]
 [connection signal="body_exited" from="orderarea" to="orderarea" method="_on_body_exited"]
+[connection signal="noone" from="orderarea" to="alertbox" method="_on_orderarea_noone"]
+[connection signal="tomany" from="orderarea" to="alertbox" method="_on_orderarea_tomany"]
 [connection signal="triggercolor" from="orderarea" to="orderarea/CollisionShape2D/orderbox" method="_on_orderarea_triggercolor"]
 [connection signal="timeout" from="customer_timer" to="." method="_on_customer_timer_timeout"]

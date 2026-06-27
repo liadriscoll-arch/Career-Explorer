@@ -1,11 +1,15 @@
 extends Label
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	set_text("")
+	if Chefglobal.orders.size() > 3:
+		for i  in range(3, Chefglobal.orders.size()):
+			text += (Chefglobal.orders.get(i).name + "\n" + Chefglobal.orders.get(i).item1)
+			if Chefglobal.orders.get(i).item2 != "":
+				text += "\n\n" + Chefglobal.orders.get(i).item2
+			if Chefglobal.orders.get(i).item3 != "":
+				text += "\n\n" + Chefglobal.orders.get(i).item3
+			text += "\n" + str(Chefglobal.orders.get(i).money) + " Dollars" + "\n\n"
+	else:
+		set_text("")

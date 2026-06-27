@@ -89,3 +89,7 @@ func update_line() -> void:
 	if Chefglobal.customer_line.size() >= 4:
 		spot3.texture = Chefglobal.customer_line[3]
 	
+
+
+func _on_orderarea_action() -> void:
+	update_line()

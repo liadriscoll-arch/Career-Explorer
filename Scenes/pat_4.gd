@@ -11,7 +11,7 @@ func _on_pansarea_fourthinteract() -> void:
 		await get_tree().create_timer(10.0).timeout
 		if visible == true:
 			set_frame(1)
-			await get_tree().create_timer(10.0).timeout
+			await get_tree().create_timer(20.0).timeout
 			if visible == true:
 				set_frame(2)
 	elif visible == true and Chefglobal.inventory == "":

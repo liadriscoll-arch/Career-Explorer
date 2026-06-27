@@ -20,5 +20,5 @@ var asempiztop4 = []
 var asemburgtop4 = []
 var plate = false
 var canmove = true
-var orders = []
 var customer_line: Array[Texture2D] = []
+var orders: Array[order] = []

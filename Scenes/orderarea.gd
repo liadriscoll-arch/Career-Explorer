@@ -1,8 +1,11 @@
 extends Area2D
 
 var player_inside := false
+var neworder: order
 signal action
 signal triggercolor
+signal tomany
+signal noone
 
 func _ready() -> void:
 	pass
@@ -22,4 +25,12 @@ func _on_body_exited(body: Node2D) -> void:
 		triggercolor.emit()
 
 func open_menu() -> void:
-	action.emit()
+	if Chefglobal.customer_line.size() > 0 and Chefglobal.orders.size() < 6:
+		Chefglobal.customer_line.remove_at(0)
+		neworder = order.new()
+		Chefglobal.orders.append(neworder)
+		action.emit()
+	elif Chefglobal.orders.size() == 6:
+		tomany.emit()
+	else:
+		noone.emit()

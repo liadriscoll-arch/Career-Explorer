@@ -139,3 +139,24 @@ func _on_burg_4_tomuch() -> void:
 	await get_tree().create_timer(1.0).timeout
 	if get_text() == "Alerts:\nMax toppings!":
 		set_text("Alerts:\n")
+
+
+func _on_orderarea_action() -> void:
+	set_text("Alerts:\nOrder taken!")
+	await get_tree().create_timer(1.0).timeout
+	if get_text() == "Alerts:\nOrder taken!":
+		set_text("Alerts:\n")
+
+
+func _on_orderarea_tomany() -> void:
+	set_text("Alerts:\nToo many orders!")
+	await get_tree().create_timer(1.0).timeout
+	if get_text() == "Alerts:\nToo many orders!":
+		set_text("Alerts:\n")
+
+
+func _on_orderarea_noone() -> void:
+	set_text("Alerts:\nNo one to take order")
+	await get_tree().create_timer(1.0).timeout
+	if get_text() == "Alerts:\nNo one to take order":
+		set_text("Alerts:\n")

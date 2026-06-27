@@ -42,7 +42,7 @@ func _on_assemblyarea_firstpizza() -> void:
 	elif isready and Chefglobal.inventory == "":
 		visible = false
 		toppings = ", ".join(Chefglobal.asempiztop1) 
-		Chefglobal.inventory= type + " Dough with\n" + toppings
+		Chefglobal.inventory= type + " Dough with " + toppings
 		if Chefglobal.asempiztop1 == []:
 			Chefglobal.inventory = type + " Ready Dough"
 		Chefglobal.asempiztop1.clear()

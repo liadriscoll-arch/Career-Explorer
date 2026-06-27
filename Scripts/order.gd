@@ -36,12 +36,12 @@ var orders = [
 	"Cooked White Ready Dough",
 	"Cooked White Dough",
 	"Cooked Marinara Dough",
-	"Sauceless\nCooked Long Noodles",
-	"Sauceless\nCooked Short Noodles",
-	"Marinara Sauce\nCooked Long Noodles",
-	"Marinara Sauce\nCooked Short Noodles",
-	"White Sauce\nCooked Long Noodles",
-	"White Sauce\nCooked Short Noodles"
+	"Sauceless Cooked Long Noodles",
+	"Sauceless Cooked Short Noodles",
+	"Marinara Sauce Cooked Long Noodles",
+	"Marinara Sauce Cooked Short Noodles",
+	"White Sauce Cooked Long Noodles",
+	"White Sauce Cooked Short Noodles"
 	]
 var burgtoppings = [
 	"",
@@ -74,9 +74,15 @@ var toppings1 = []
 var toppings2 = []
 var toppings3 = []
 var toppingtext: String
+var boxed: bool
 
 func _init():
+	boxed = false
+	if randi_range(0, 5) == 5:
+		boxed = true
 	name = names.get(randi_range(0, names.size()-1))
+	if boxed:
+		name += " - Delivery"
 	rand1 = randi_range(9, orders.size()-1)
 	rand2 = randi_range(4, orders.size()-1)
 	rand3 = randi_range(0, orders.size()-1)
@@ -118,14 +124,19 @@ func _init():
 	toppings3 = toppings3.filter(func(item): return item.length() > 0)
 	if toppings1 != []:
 		toppingtext = ", ".join(toppings1) 
-		item1 += " with\n" + toppingtext
+		item1 += " with " + toppingtext
 	if toppings2 != []:
 		toppingtext = ", ".join(toppings2) 
-		item2 += " with\n" + toppingtext
+		item2 += " with " + toppingtext
 	if toppings3 != []:
 		toppingtext = ", ".join(toppings3) 
-		item3 += " with\n" + toppingtext
-		
+		item3 += " with " + toppingtext
+	if boxed:
+		item1 = "Boxed " + item1
+		if item2 != "":
+			item2 = "Boxed " + item2
+		if item3 != "":
+			item3 = "Boxed " + item3
 	if "Bun" in item1:
 		if "with" in item1:
 			money += 15
@@ -176,13 +187,5 @@ func _init():
 		money += 10
 	else:
 		money += 0
-	
-	print(item1)
-	print(item2)
-	print(item3)
-	print(rand1)
-	print(rand2)
-	print(rand3)
-	print(toppings1)
-	print(toppings2)
-	print(toppings3)
+	if boxed:
+		money += 10

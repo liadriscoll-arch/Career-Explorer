@@ -1,7 +1,18 @@
 extends Label
 
-var order1 = order.new() 
 
-func _ready() -> void:
-	set_text(order1.name + "\n" + order1.item1 + "\n" +
-	order1.item2 + "\n" + order1.item3 + "\n" + str(order1.money))
+func _process(delta: float) -> void:
+	set_text("")
+	if Chefglobal.orders.size() > 0:
+		for i in Chefglobal.orders.size():
+			if i > 2:
+				pass
+			else:
+				text += (Chefglobal.orders.get(i).name + "\n" + Chefglobal.orders.get(i).item1)
+				if Chefglobal.orders.get(i).item2 != "":
+					text += "\n\n" + Chefglobal.orders.get(i).item2
+				if Chefglobal.orders.get(i).item3 != "":
+					text += "\n\n" + Chefglobal.orders.get(i).item3
+				text += "\n" + str(Chefglobal.orders.get(i).money) + " Dollars" + "\n\n"
+	else:
+		set_text("No new orders!")
