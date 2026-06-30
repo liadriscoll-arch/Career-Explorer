@@ -21,7 +21,7 @@ func _process(delta: float) -> void:
 	Global.esc_settings()
  
 
-
+# Bird animation
 func _on_bird_timer_timeout() -> void:
 	b_animation_player.play("move")
 	
