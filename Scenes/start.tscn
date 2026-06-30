@@ -170,12 +170,10 @@ offset_bottom = -121.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_3bxa3")
 theme_override_font_sizes/font_size = 20
-text = "You are fella.
-You spend your summer days
-sitting around, and 
-playing video games.
-your mother wants you to get a job.
-You willingly agree.
+text = "You are fella, a memeber
+of FBLA
+
+
 
 Welcome to Career Explorer"
 horizontal_alignment = 1
@@ -211,6 +209,6 @@ position = Vector2(105, -97)
 zoom = Vector2(3.3, 3.3)
 
 [connection signal="pressed" from="Settings_button" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="Start_button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Start_button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Start_button" to="Start_button" method="_on_pressed"]

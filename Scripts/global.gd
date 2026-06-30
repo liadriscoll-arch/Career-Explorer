@@ -87,6 +87,6 @@ func go_back_to_previous_scene():
 		get_tree().change_scene_to_file(Global.previous_scene_path)
 	else:
 		# Fallback just in case the path is empty (e.g., if you launched settings directly)
-		get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
+		get_tree().change_scene_to_file("res://Scenes/start.tscn")
 		
 		
